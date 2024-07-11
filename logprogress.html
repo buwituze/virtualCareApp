@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/logprogress.css">
+    <link rel="stylesheet" href="css/filter.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>Home</title>
+</head>
+<body>
+
+   <header>
+
+    <div class="headercontents">
+       <div class="logo"><h3>HEALTHYCO.</h3></div>
+
+       <div class="headeraccess">
+        <div class="search">
+            <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
+        </div>
+
+        <div class="icons">
+        <div class="Profile">
+            <a href="">notifications</a>
+        </div>
+
+        <div class="Profile">
+            <a href="">profile</a>
+        </div>
+    </div>
+
+       </div>
+    </div>
+   </header>
+
+    <section class="mainbody">
+
+
+
+      
+      <nav>
+        <div class="navbar">
+          <div class="navlogo"><h3><a href="">HEALTHYCO.</a></h3></div>
+
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="./messagepatient.html">Messages</a></li>
+                <li><a href="#">My progress</a></li>
+                <li><a href="#">Log Progress</a></li>
+                <li><a href="#">Schedules</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Health Updates</a></li>
+                <li class="dropdown">
+                    <p>Support</p>
+                    <ul class="submenu">
+                        <li><a href="">Send a ticket</a></li>
+                        <li><a href="">FQA</a></li>
+                        <li><a href="">Learn More</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <p>Communities</p>
+                    <ul class="submenu">
+                        <li><a href="">Community</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div> 
+      </nav>
+
+    <section class="logprogress">
+
+
+        <div class="logprogressform">
+
+            <form action="">
+
+                <h2>Log Progress</h2>
+
+                <label for="title">Title</label>
+                <input type="text" name="title" placeholder="What is your progress related to?" id="">
+
+                <label for="description">Description</label>
+                <input type="text" name="description" placeholder="Enter Progress Description" id="">
+
+                <label for="age">Age</label>
+                <input type="number" name="age" placeholder="Enter your age" id="" required>
+
+                <label for="Symptoms">Share Your Progess</label>
+                <select name="symptompicklist" id="symptompicklist" required class="relatedlists">
+                    <option value="fever">No Progress</option>
+                    <option value="fever">Fever</option>
+                    <option value="cough">Cough</option>
+                    <option value="sneezing">Sneezing</option>
+                    <option value="runnynose">Rushes</option>
+                    <option value="sorethroat">Sore Throat</option>
+                    <option value="headache">Headache</option>
+                    <option value="diarrhea">Diarrhea</option>
+                    <option value="vomiting">Vomiting</option>
+                    <option value="nausea">Nausea</option>
+                    <option value="fatigue">Fatigue</option>   
+                    <option value="fever">Other...</option> 
+                    
+                </select>
+                
+                <label for="other">Other Symptoms</label>
+                <textarea name="Symptoms" id="" cols="30" rows="10"></textarea>
+
+                <label for="photo">Photo</label>
+                <input type="file" name="photo" id="">
+
+                <label for="comments">Additional Comments</label>
+                <input type="text" name="comments" id="">
+
+                <label for="Schedule">Schedule Submission</label>
+                <Select name="Schedule" id="Schedule" class="relatedlists">
+                    <option value="none">None</option>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+
+                </Select>
+
+                <label for="Scheduletime"></label>
+                <input type="datetime-local" name="" id="">
+
+
+                <button type="submit">Submit</button>
+
+
+            </form>
+        </div>
+
+
+
+    </section>
+
+
+
+    </section>
+
+    <br> <br> 
+
+    <footer>
+        <p>&copy; 2024 HealthyCo. App. All rights reserved.</p>
+    </footer>
+
+    <script src="js/nav.js"></script> 
+</body>
+</html>

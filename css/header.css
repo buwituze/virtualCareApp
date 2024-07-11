@@ -1,0 +1,62 @@
+header {
+    height: 90px;
+    width: 100%;
+    background-color: rgb(4, 4, 85);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.headercontents{
+    display: flex;
+    gap: 20%;
+    padding-top: 30px;
+}
+.logo{
+    padding-left: 30px;
+    color: white;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    gap: 2px;
+}
+.search input {
+    border: none;
+   width: 500px; 
+   border-radius: 15px;
+   height: 35px;
+   padding-left: 16px;
+   margin-top: -5px;
+}
+.search button{
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    margin-top: -5px;
+    padding: 10px 20px 10px 20px;
+}
+.icons{
+    display: flex;
+    gap: 40px;
+}
+.headeraccess{
+    padding-right: 40px;
+    display: flex;
+    gap: 100px;
+}
+
+.Profile a{
+ color: white;
+ cursor: pointer;
+ text-decoration: none;
+ border: none;
+ background-color: transparent;
+ padding: 3px;
+}
+.Profile a:hover {
+    background-color: rgba(248, 248, 255, 0.418);
+   }

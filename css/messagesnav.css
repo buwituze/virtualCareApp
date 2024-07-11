@@ -1,0 +1,68 @@
+.navbar{
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    height: 80vh;
+    cursor: pointer;
+}
+.navbar .navlogo{
+    padding: 40px 80px 10px 15px;
+    border-bottom: 1px solid #CCCCCC; 
+}
+.navlogo a{
+    text-decoration: none;
+    color: rgb(4, 4, 85);
+    font-size: x-large;
+    font-weight: bold;
+}
+ul {
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 120px 10px 40px;
+    font-size: 16px;
+}
+ul li a:hover{
+  background-color: rgba(223, 228, 252, 0.397);
+}
+
+.dropdown p {
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 120px 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown p:hover {
+    background-color: rgba(223, 228, 252, 0.397);
+}
+
+.submenu{
+    display: none;
+}
+
+.submenu li a{
+    padding: 10px 70px 10px 63px;
+}
+.searchmessages{
+    padding: 20px;
+}
+.searchmessages input {
+    border: none;
+    border: 1px solid #CCCCCC;
+   width: 100%; 
+   border-radius: 15px;
+   height: 35px;
+   padding-left: 16px;
+   margin-top: -10px;
+}

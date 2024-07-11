@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    flex-wrap: wrap;
+}
+body{
+    background-color: whitesmoke;
+}
+.ticketsupport{
+    margin-top: 8%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+    margin-right: 1%;
+    background-color: white;
+}
+.relatedlists{
+    margin-left: -19%;
+}
+.supportheader {
+    margin-top: 7%;
+    border-bottom: 1px solid #006400;
+}
+.supportheader ul {
+    display: flex;
+    margin-left: 35%;
+    gap: 5%; 
+    margin-top: 1%;
+    margin-bottom: 1%;
+    list-style: none;
+}
+
+.supportheader ul li {
+    padding: 10px 30px;
+}
+
+.supportheader ul li:hover {
+    background-color: rgb(241, 241, 241);
+    padding: 10px 30px;
+}
+.supportheader ul li a {
+    font-size: 20px;
+   text-decoration: none;
+   color: #006400;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% auto; 
+    width: 50%;
+    border: 1px solid grey; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-sizing: border-box; 
+}
+form h3{
+    color: #006400;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+form label {
+    margin-top: 30px;
+    width: 60%;
+}
+
+form input, form textarea {
+    padding: 10px;
+    width: 60%; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+form textarea {
+    padding: 30px;
+}
+
+form button {
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    padding: 13px 23px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+form button:hover {
+    background-color: white;
+    color: #006400;
+    border: 1px solid green;
+}
+
+.supportform h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 7%;
+    padding-top: 3%;
+    text-align: center;
+    color: blue;
+}
+.supportform{
+    padding-bottom: 2px;
+}
+
+
+
+/*FAQ*/
+
+
+.faqsupport{
+    margin-top: 7.5%;
+    margin-left: 20%;
+    padding-bottom: 1px;
+    margin-bottom: 2%;
+    margin-right: 1%;
+    background-color: white;
+}
+
+.faq-section h2 {
+    font-size: 30px;
+    margin-bottom: 70px;
+    margin-left: 14%;
+    color: blue;
+}
+
+#faqsection{
+    padding-top: 3%;
+    margin-bottom: 7%;
+    margin-left: 26%;
+    margin-right: 20%;    
+}
+
+.faq .question {
+    margin-bottom: 40px;
+}
+
+.faq .question h3 {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.faq .question p {
+    display: none;
+    background-color: #fff;
+    padding: 25px 10px 25px 20px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+
+.faq .question.active p {
+    display: block;
+}
+

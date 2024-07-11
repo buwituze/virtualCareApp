@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/filter.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>Home</title>
+</head>
+<body>
+
+   <header>
+
+    <div class="headercontents">
+       <div class="logo"><h3>HEALTHYCO.</h3></div>
+
+       <div class="headeraccess">
+        <div class="search">
+            <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
+        </div>
+
+        <div class="icons">
+        <div class="Profile">
+            <a href="">notifications</a>
+        </div>
+
+        <div class="Profile">
+            <a href="">profile</a>
+        </div>
+    </div>
+
+       </div>
+    </div>
+   </header>
+
+    <section class="mainbody">
+
+
+
+      
+      <nav>
+        <div class="navbar">
+          <div class="navlogo"><h3><a href="">HEALTHYCO.</a></h3></div>
+
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="./messagepatient.html">Messages</a></li>
+                <li><a href="#">My progress</a></li>
+                <li><a href="#">Log Progress</a></li>
+                <li><a href="#">Schedules</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Health Updates</a></li>
+                <li class="dropdown">
+                    <p>Support</p>
+                    <ul class="submenu">
+                        <li><a href="">Send a ticket</a></li>
+                        <li><a href="">FQA</a></li>
+                        <li><a href="">Learn More</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <p>Communities</p>
+                    <ul class="submenu">
+                        <li><a href="">Community</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div> 
+      </nav>
+
+    <section class="homebody">
+        <div class="cards">
+            <div class="progress">
+          
+               <div class="chart">
+                <div class="gaugechart">
+
+                </div>
+
+
+               </div>
+
+               <div class="description">
+                    <h3>Check Your Progress!</h3>
+                    <p>
+                       Hello {username}, congratulations! 
+                       You're at Week 6 of your  treatment and you seem to be progressing very well.
+
+                       <br> <br>
+
+                        You've come a long away! Continue following your doctors instructions consistently 
+                        and avoid to engage in any unhealthy practices.</p>
+
+                        <br>
+
+                        <div class="buttons">
+                            <button><a href="">Understand healthy practices</a></button>
+
+                            <button><a href="">View All</a></button>
+
+                        </div>
+
+               
+               </div>
+
+            </div>
+
+            <div class="upcomingschedules">
+
+                <h3>Upcoming Schedules i</h3>
+
+                <div class="scheduledescription">
+
+                     <h4>{sheduleddate}</h4>
+                   
+                    <p>Appointment with {doctorname} for {scheduleditem} at {scheduledtime}</p>
+
+                </div>
+        </div>
+
+        </div>
+
+        <div class="communitynotifications">
+
+            <div class="sendercontent">
+
+                <p>{username} posted in <a href="">Community</a></p>
+
+            </div>
+
+            <div class="messagecontent">
+        <p>Ways to feel better about your situation:</p>
+
+        <span class="timestamp">10:28 AM</span>
+
+            </div>
+
+            <div class="relatedinfo">
+            <div class="likedby">
+                 <p><span>2</span> liked this post</p>
+            </div>
+
+            <div class="communityactions">
+                <i>like</i> 
+                <p>{no of comments}Comment</p>
+
+            </div>
+        </div>
+
+        </div>
+
+      <div class="allLatestprogress">
+
+        <h3>Latest Progress</h3>
+        
+        <div class="latestprogress">
+            <div class="checkprogress">
+                <div class="progressstatus"></div>
+
+            <div class="latestprogresstitle"><h4>Progress on {illnessname}. Corresponding Doctor: {doctorname}</h4></div>
+</div>
+
+           
+            <p>You're right on track! {Username}, continue on this trajectory and you'll get better in no time! </p>
+          </div>
+
+          <div class="latestprogress">
+
+            <div class="checkprogress">
+                <div class="progressstatus"></div>
+
+            <div class="latestprogresstitle"><h4>Progress on {illnessname}. Corresponding Doctor: {doctorname}</h4></div>
+</div>
+
+           
+            <p>You're right on track! {Username}, continue on this trajectory and you'll get better in no time! </p>
+          </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    </section>
+
+    <br> <br> <br> <br> <br>
+
+    <footer>
+        <p>&copy; 2024 HealthyCo. App. All rights reserved.</p>
+    </footer>
+
+    <script src="js/nav.js"></script> 
+</body>
+</html>

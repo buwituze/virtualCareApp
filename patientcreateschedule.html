@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/patientschedules.css">
+    <link rel="stylesheet" href="css/filter.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>Create Schedules</title>
+</head>
+<body>
+
+   <header>
+
+    <div class="headercontents">
+       <div class="logo"><h3>HEALTHYCO.</h3></div>
+
+       <div class="headeraccess">
+        <div class="search">
+            <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
+            <button type="submit">Se</button>
+        </div>
+
+        <div class="icons">
+        <div class="Profile">
+            <a href="">notifications</a>
+        </div>
+
+        <div class="Profile">
+            <a href="">profile</a>
+        </div>
+    </div>
+
+       </div>
+    </div>
+   </header>
+
+    <section class="mainbody">
+
+
+
+      
+      <nav>
+        <div class="navbar">
+          <div class="navlogo"><h3><a href="">HEALTHYCO.</a></h3></div>
+
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="./messagepatient.html">Messages</a></li>
+                <li class="dropdown">
+                    <p>Progress</p>
+                    <ul class="submenu">
+                        <li><a href="">My Progress</a></li>
+                        <li><a href="">Log Progress</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Schedules</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Health Updates</a></li>
+                <li class="dropdown">
+                    <p>Support</p>
+                    <ul class="submenu">
+                        <li><a href="">Send a ticket</a></li>
+                        <li><a href="">FQA</a></li>
+                        <li><a href="">Learn More</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <p>Communities</p>
+                    <ul class="submenu">
+                        <li><a href="">Community</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div> 
+      </nav>
+
+    <section class="createschedules">
+
+        <div class="tracker">
+            <h2>Create Schedule</h2>
+    
+            <div class="details">
+                <form id="setschedule">
+                    <label for="date">Enter Date:</label><br><br>
+                    <input type="date" id="due-date" required><br><br>
+    
+                    <label for="time">Enter Time</label><br><br>
+                    <input type="time" id="due-time" required><br><br>
+    
+                    <label for="repeat">Repeat</label><br><br>
+                    <select id="repeat" name="repeat" required>
+                        <option value="none">None</option>
+                        <option value="everyday">Everyday</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="biweekly">Biweekly</option>
+                        <option value="monthly">Monthly</option>
+                    </select><br><br>
+    
+                    <button type="submit" id="save">Save</button>
+                    <button type="button" id="cancel">Cancel</button>
+                </form>
+            </div>
+        </div>
+     
+    </section>
+
+    <br> <br>
+
+    <footer>
+        <p>&copy; 2024 HealthyCo. App. All rights reserved.</p>
+    </footer>
+
+    <script src="js/nav.js"></script> 
+</body>
+</html>
