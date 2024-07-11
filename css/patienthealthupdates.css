@@ -1,69 +1,164 @@
-.mainbody {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+*{
+    margin: 0;
 }
 
-.main-image {
+body{
     width: 100%;
-    height: 50vh;
-    background: url('../mnt/data/healthupdates.png') no-repeat center center/cover;
-    margin-bottom: 20px;
+    background-color: #f3f2f260;
 }
 
-.healthupdates {
+
+.myprogresssearch {
+    padding-left: 22%;
+    padding-bottom: 1%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    gap: 1px;
+    padding-top: 4%;
+    /* justify-content: space-around; */
+}
+.myprogresssearch input {
+  
+    border: none;
+    border: 1px solid #cccccc;
+   width: 500px; 
+   border-radius: 15px;
+   height: 35px;
+   padding-left: 16px;
+   margin-top: -5px;
+}
+.myprogresssearch button{
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(11, 9, 119);
+    margin-top: -5px;
+    padding: 3px 10px 3px 10px;
+}
+.myprogress{
+  
+    padding-left: 21%;
+    width: 77%;
+    padding-top: 8%;
 }
 
-.card {
-    width: 45%;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 20px 0;
-    padding: 20px;
-    text-align: center;
+.healthupdates{
+    margin-top: 6%;
+    margin-left: 19%;
 }
 
-.card h2 {
-    margin-bottom: 10px;
+.intro {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px 26px;
+    text-align: left;
+    width: 95%;
+    font-size: 20px;
+}
+.introcontent{
+    width: 30%;
+    padding: 6% 0 6% 30%;
+}
+.intro h1 {
+    margin-top: 0;
+    padding-bottom: 40px;
 }
 
-.card p {
-    margin-bottom: 20px;
+.intro p {
+    margin-top: 0;
+    padding-bottom: 40px;
 }
 
-.card button {
+.intro button {
     padding: 10px 20px;
-    background-color: #28a745;
-    color: #fff;
+    background-color: white;
+    color: rgb(10, 10, 104);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
 }
 
-.card button:hover {
-    background-color: #218838;
+.intro button:hover {
+    background-color: rgb(221, 218, 218);
 }
 
-.card.left {
-    align-self: flex-start;
+.facts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -30px;
+    width: 80%;
+    padding: 0 100px;
 }
 
-.card.right {
-    align-self: flex-end;
+.fact-card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    width: 20%;
+    height: 30vh;
+    margin: 0 10px;
+}
+.fact-card h3 {
+    padding: 20px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 17px;
+
+}
+.fact-card h3 span {
+    padding-left: 50px;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+
+}
+.cardheader{
+    padding-left: 26px;
+    display: flex;
+    align-items: center;
 }
 
-@media (max-width: 768px) {
-    .card {
-        width: 80%;
-    }
+.tip-card {
+    display: flex;
+    background: white;
+    padding: 20px;
+    width: 74%;
+    border-radius: 10px;
+    margin: 20px 120px;
+}
+.tip-card button {
+    color: white;
+    background: rgb(26, 3, 129);
+    border: none;
+    padding: 7px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
 
-    .card.left, .card.right {
-        align-self: center;
-    }
+.tip-text {
+    width: 55%;
+    padding: 20px;
+    
+}
+.tip-text h2{
+    text-align: center;
+    color: blue;
+}
+.tip-text p{
+    padding-top: 30px;
+}
+
+.tip-image {
+    width: 45%;
+    height: 15vh;
+
+}
+.tip-image img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
 }

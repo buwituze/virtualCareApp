@@ -3,40 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/support.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/patienthealthupdates.css">
     <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/patienthealthupdates.css">
     <title>Health Updates</title>
 </head>
 <body>
 
 <header>
     <div class="headercontents">
-        <div class="logo"><h3>HEALTHYCO.</h3></div>
-        <div class="headeraccess">
-            <div class="search">
-                <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
-                <button type="submit">Se</button>
-            </div>
-            <div class="icons">
-                <div class="Profile">
-                    <a href="">notifications</a>
-                </div>
-                <div class="Profile">
-                    <a href="">profile</a>
-                </div>
-            </div>
+       <div class="logo"><h3>HEALTHYCO.</h3></div>
+       <div class="headeraccess">
+        <div class="search">
+            <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
+            <button type="submit">Search</button>
         </div>
+        <div class="icons">
+        <div class="Profile">
+            <a href=""><i class='bx bx-bell'></i></a>
+        </div>
+        <div class="Profile">
+            <a href=""><i class='bx bx-bell'></i></a>
+        </div>
+        </div>
+       </div>
     </div>
 </header>
 
 <section class="mainbody">
     <nav>
         <div class="navbar">
-            <div class="navlogo"><h3><a href="">HEALTHYCO.</a></h3></div>
+          <div class="navlogo"><h3><a href="">HEALTHYCO.</a></h3></div>
             <ul class="nav">
                 <li><a href="./homepatient.html">Home</a></li>
                 <li><a href="./messagepatient.html">Messages</a></li>
@@ -75,25 +75,74 @@
     </nav>
 
     <section class="healthupdates">
-        <div class="main-image">
-            <img src="/mnt/data/healthupdates.png" alt="Health Updates">
+        <div class="intro">
+            <div class="introcontent">
+            <h1>Best Health Practices</h1>
+            <p>Discover a variety of tips and advice to improve your health and well-being.</p>
+            <button onclick="scrollToTips()">Get Started</button>
         </div>
-        <div class="card left">
-            <h2>Stay Hydrated</h2>
-            <p>Drinking water is essential for maintaining good health. Aim for 8 glasses a day.</p>
-            <button onclick="window.location.href='https://www.healthline.com/nutrition/how-much-water-should-you-drink-per-day'">Learn More</button>
         </div>
-        <div class="card right">
-            <h2>Eat Balanced Meals</h2>
-            <p>Ensure your diet includes a variety of nutrients by eating fruits, vegetables, and proteins.</p>
-            <button onclick="window.location.href='https://www.choosemyplate.gov/'">Learn More</button>
+
+        <div class="facts">
+            <div class="fact-card">
+
+                <div class="cardheader">
+                    <i>i</i>
+                    <h3>Aproximately <br> <span>78%</span></h3>
+                </div>
+                <p>health updates are useful for</p>
+            </div>
+            <div class="fact-card">
+                <div class="cardheader">
+                    <i>i</i>
+                    <h3>Up to <br> <span>59%</span></h3>
+                </div>
+                <p>Improvement in overall wellness reported by following our recommended health practices.</p>
+            </div>
+            <div class="fact-card">
+                <div class="cardheader">
+                    <i>i</i>
+                    <h3>Need Clarity on our these practices?</h3>
+                </div>
+                <p>Our doctors are at you disposal. We are willing to help you doing every step of your journey.</p>
+            </div>
         </div>
-        <div class="card left">
-            <h2>Exercise Regularly</h2>
-            <p>Regular physical activity can improve your muscle strength and boost your endurance.</p>
-            <button onclick="window.location.href='https://www.cdc.gov/physicalactivity/basics/adults/index.htm'">Learn More</button>
+
+        
+        <div class="myprogresssearch">
+            <input type="search" placeholder="Search My Progress" name="searchbar" id="searchitem">
+            <button type="submit">Search</button>
         </div>
+
+
+        <section id="healthtips">
+
+        <div class="tip-card">
+            <div class="tip-text">
+                <h2>Stay Hydrated</h2>
+                <p>Drinking enough water each day is crucial for many reasons: to regulate temperature, keep joints lubricated, prevent infections, deliver nutrients to cells, and keep organs functioning properly. Being well-hydrated also improves sleep quality, cognition, and mood.</p>
+                <button onclick="location.href='https://example.com/stay-hydrated'">Learn More</button>
+            </div>
+            <div class="tip-image">
+                <img src="./images/everydayhealth.jpg" alt="Stay Hydrated">
+            </div>
+        </div>
+        <div class="tip-card">
+            <div class="tip-image">
+                <img src="./images/healthupdatespage.jpg" alt="Exercise Regularly">
+            </div>
+            <div class="tip-text">
+                <h2>Best Abs exercises</h2>
+                <p>Regular physical activity can improve your muscle strength and boost your endurance. Exercise delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more efficiently. When your heart and lung health improve, you have more energy to tackle daily chores.</p>
+                <button onclick="location.href='https://example.com/exercise-regularly'">Learn More</button>
+            </div>
+        </div>
+
     </section>
+
+    </section>
+
+    <br> <br> <br>
 
     <footer>
         <p>&copy; 2024 HealthyCo. App. All rights reserved.</p>
@@ -101,6 +150,10 @@
 
     <script src="js/nav.js"></script> 
     <script src="js/support.js"></script>
-
+    <script>
+        function scrollToTips() {
+            document.querySelector('#healthtips').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
