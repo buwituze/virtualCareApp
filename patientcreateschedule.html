@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="css/patientschedules.css">
     <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" href="css/header.css">
@@ -71,7 +73,7 @@
                 </ul>
             </div> 
         </nav>
-        
+
 
     <section class="createschedules">
 
@@ -80,6 +82,40 @@
     
             <div class="details">
                 <form id="setschedule">
+    
+                    <label for="title">Title</label><br><br>
+                    <input type="text" id="title" name="title" placeholder="What is this schedule related to?" required><br><br>
+    
+
+                    <label for="category">Category</label><br><br>
+                    <select id="category" name="category" required>
+                        <option value="none">Pick department</option>
+                        <option value="daily">Dental</option>
+                        <option value="weekly">Radiology</option>
+                        <option value="biweekly">Internal Medecine</option>
+                        <option value="monthly">Dermatology</option>
+                    </select><br><br>
+
+                    <label for="doctors">Related Doctor</label>
+                    <select name="doctors" id="relateddoctors">
+                        <option value="doctor1">Dr.{doctorName}</option>
+                        <option value="doctor1">Dr.{doctorName}</option>
+                        <option value="doctor1">Dr.{doctorName}</option>
+
+                    </select>
+
+                    <label for="doctoravailability">Dr.{doctorname} is available on</label>
+                    <select name="doctoravailability" id="doctoravbalability">
+                        <option value="Monday">Monday from 8:00 AM to 5:00 PM</option>
+                        <option value="Tuesday">Tuesday from 2:00 PM to 5:00 PM</option>
+                        <option value="Thursday">Thursday from 8:00 AM to 5:00 PM</option>
+                        <option value="Friday">Friday from 10:00 PM to 5:00 PM</option>
+                        <option value="Saturday">Saturday from 11:00 AM to 4:00 PM</option>
+                    </select>
+
+                    <label for="description">Description</label><br><br>
+                    <input type="text" id="description" name="description" required><br><br>
+
                     <label for="date">Enter Date:</label><br><br>
                     <input type="date" id="due-date" required><br><br>
     

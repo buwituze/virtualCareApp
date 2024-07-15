@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/individualprogress.css">
+    <link rel="stylesheet" href="css/doctorindividualprogress.css">
     <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="css/response.css">
+    <title>Individual Progress</title>
 </head>
 <body>
 
@@ -95,7 +96,9 @@
                     <!-- <div class="progressstatus"></div> -->
     
                 <div class="latestprogresstitle">
-                    <h4>Your Progress form on {illnessname}</h4></div>
+                    <h4>Progress form on {illnessname}</h4>
+                    <button class="sendfeedback">Send Feedback</button>
+                </div>
     </div>
                  
 
@@ -135,7 +138,7 @@
                </div>
 
                <div class="description">
-                    <h3>Check Your Progress!</h3>
+                    <h3>Progress Presentation</h3>
                     <p>
                         You've come a long away! Continue following your doctors instructions consistently 
                         and avoid to engage in any unhealthy practices.</p>
@@ -163,7 +166,7 @@
                 </div>
  
                 <div class="description">
-                     <h3>Check Your Progress!</h3>
+                     <h3>Progress Presentation</h3>
                      <p>
                          You've come a long away! Continue following your doctors instructions consistently 
                          and avoid to engage in any unhealthy practices.</p>
@@ -186,7 +189,24 @@
 
     </section>
 
+    
+    <div class="sendmessage">
+        <textarea id="message" placeholder="Feedback"></textarea>
+        <div class="sendmessageactions">
+            <label for="file-input">
+                <span class="icon">📷</span>
+            </label>
+            <input type="file" id="file-input" style="display: none;">
 
+            <label for="file-input">
+                <span class="icon">📄</span>
+            </label>
+            <input type="file" id="file-input" style="display: none;">
+
+            <span class="icon emoji-icon">😊</span>
+            <button type="submit">Send</button>
+        </div>
+    </div>
 
     </section>
 </section>
@@ -198,5 +218,6 @@
     </footer>
 
     <script src="js/nav.js"></script> 
+    <script src="js/messagepatient.js"></script>
 </body>
 </html>

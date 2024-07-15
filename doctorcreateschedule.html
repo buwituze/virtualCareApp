@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
-    <title>All Schedules</title>
+    <title>Create Schedules</title>
 </head>
 <body>
-
     <header>
         <div class="headercontents">
            <div class="logo"><h3>HEALTHYCO.</h3></div>
@@ -75,56 +74,65 @@
             </div> 
         </nav>
 
-    <section class="allschedules">
 
-        <div class="allschedulesbody">
+    <section class="createschedules">
 
-            <div class="schedulessubbody">
-
-            <h1>Patient's Schedules</h1>
-
-            <div class="schedule">
-
-                
-                <div class="guide">
-                    <img src="" alt="">
-                    <p>Your schedule will appear here. <br> Set a schedule to get things done with ease!</p>
-                </div>
-        
-                <div id="schedule-list"></div>
-
-            </div>
-            
-        </div>
-
-
-            <div class="schedulescards">
-
-            <div class="elementschedule" id="upcomingschedules">
-
-                <h3>Upcoming Schedules</h3>
-
-                <div id="schedule-list"></div>
-
-
-            </div>
-
-            <div class="elementschedule" id="overdueschedules">
-
-                <h3>Overdue Schedules</h3>
-
-                <div id="schedule-list"></div>
-
-
-            </div>
-
-             </div>
-
+        <div class="tracker">
+            <h2>Create Schedule</h2>
     
-    </div>
+            <div class="details">
+                <form id="setschedule">
+    
+                    <label for="title">Title</label><br><br>
+                    <input type="text" id="title" name="title" placeholder="What is this schedule related to?" required><br><br>
+    
+                    <br> <br>
 
+                    <label for="category">Category</label><br><br>
+                    <select id="category" name="category" required>
+                        <option value="none">Pick department</option>
+                        <option value="daily">Dental</option>
+                        <option value="weekly">Radiology</option>
+                        <option value="biweekly">Internal Medecine</option>
+                        <option value="monthly">Dermatology</option>
+                    </select><br><br>
 
+                    <br> <br>
 
+                    <label for="doctors">Related Patient</label>
+                    <select name="doctors" id="relateddoctors">
+                        <option value="doctor1">{username}</option>
+                        <option value="doctor1">Dr.{doctorName}</option>
+                        <option value="doctor1">Dr.{doctorName}</option>
+
+                    </select>
+
+                    <br> <br>
+
+                    <label for="description">Description</label><br><br>
+                    <input type="text" id="description" name="description" required><br><br>
+
+                    <label for="date">Enter Date:</label><br><br>
+                    <input type="date" id="due-date" required><br><br>
+    
+                    <label for="time">Enter Time</label><br><br>
+                    <input type="time" id="due-time" required><br><br>
+    
+                    <label for="repeat">Repeat</label><br><br>
+                    <select id="repeat" name="repeat" required>
+                        <option value="none">None</option>
+                        <option value="everyday">Everyday</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="biweekly">Biweekly</option>
+                        <option value="monthly">Monthly</option>
+                    </select><br><br>
+    
+                    <button type="submit" id="save">Save</button>
+                    <button type="button" id="cancel">Cancel</button>
+                </form>
+            </div>
+        </div>
+     
     </section>
 
     <br> <br>

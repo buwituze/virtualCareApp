@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <link rel="stylesheet" href="css/patientschedules.css">
+    <link rel="stylesheet" href="css/patientslist.css">
     <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
-    <title>All Schedules</title>
+    <link rel="stylesheet" href="css/response.css">
+    <title>Individual Progress</title>
 </head>
 <body>
 
@@ -75,64 +75,37 @@
             </div> 
         </nav>
 
-    <section class="allschedules">
+        <section class="patientslist">
 
-        <div class="allschedulesbody">
-
-            <div class="schedulessubbody">
-
-            <h1>Patient's Schedules</h1>
-
-            <div class="schedule">
-
+            <div class="clients">
+                <h2>My Patients</h2>
                 
-                <div class="guide">
-                    <img src="" alt="">
-                    <p>Your schedule will appear here. <br> Set a schedule to get things done with ease!</p>
-                </div>
-        
-                <div id="schedule-list"></div>
+                <div class="clientstable">
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Progress</th>
+                            <th>Contact</th>
+                            <th>Location</th>
+                            <th>Action</th>
+                        </tr>
 
+
+                    </table>
             </div>
-            
-        </div>
-
-
-            <div class="schedulescards">
-
-            <div class="elementschedule" id="upcomingschedules">
-
-                <h3>Upcoming Schedules</h3>
-
-                <div id="schedule-list"></div>
-
-
-            </div>
-
-            <div class="elementschedule" id="overdueschedules">
-
-                <h3>Overdue Schedules</h3>
-
-                <div id="schedule-list"></div>
-
-
-            </div>
-
-             </div>
-
-    
-    </div>
-
-
+              
 
     </section>
+</section>
 
-    <br> <br>
+    <br> <br> <br> 
 
     <footer>
         <p>&copy; 2024 HealthyCo. App. All rights reserved.</p>
     </footer>
 
     <script src="js/nav.js"></script> 
+    <script src="js/messagepatient.js"></script>
 </body>
 </html>

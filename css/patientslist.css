@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+.patientslist{
+    padding-left: 21%;
+    padding-top: 5%;
+}
+.clients{
+    margin-top: 5%;
+   align-items: center;
+}
+.clients h2{
+    padding-left: 33%;
+    color: blue;
+    margin-bottom: 3%;
+}
+
+table th {
+    color: gray;
+    font-weight: lighter;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px; 
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.btn {
+    background-color: rgb(22, 12, 119);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(64, 52, 168);
+}
