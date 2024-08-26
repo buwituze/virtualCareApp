@@ -2,9 +2,9 @@
     background-color: white;
     border: 1px solid #CCCCCC;
     position: fixed;
-    top: 90px;
+    top: 70px;
     left: 0;
-    height: 80vh;
+    height: 90vh;
     cursor: pointer;
 }
 .navbar .navlogo{

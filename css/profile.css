@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    border: 1px solid #cccccc;
+    width: 80%;
+    height: 80vh;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+.profilecontent {
+    display: flex;
+}
+.profileheader {
+    background-color: blue;
+    color: white;
+    padding: 5px 5px 5px 20px;
+    width: 100%;
+    font-size: 12px;
+}
+
+aside {
+    background-color: #dfe2fab0;
+    width: 200px;
+    height: 74vh;
+    padding: 1em;
+}
+
+aside .avatar {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+aside .avatar img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+aside ul li.active,
+aside ul li:hover {
+    border-left: 4px solid blue;
+    padding-left: 0.5em;
+    background-color: #f0f0f0;
+}
+
+.dropdown {
+    list-style: none;
+    padding-left: 1em;
+}
+
+.dropdown li {
+    padding: 5px 0;
+}
+
+main {
+    flex: 1;
+    padding: 1em;
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+.profile-info {
+    margin-top: 1em;
+}
+
+.profile-info ul {
+    list-style: none;
+}
+
+.profile-info ul li {
+    margin: 0.5em 0;
+}
+
+.profile-info button {
+    margin-top: 1em;
+}

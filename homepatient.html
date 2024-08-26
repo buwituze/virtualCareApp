@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/filter.css">
+    <link rel="stylesheet" href="./css/charts.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -15,7 +15,9 @@
 
     <header>
         <div class="headercontents">
-           <div class="logo"><h3>HEALTHYCO.</h3></div>
+           <div class="logo">
+             <img src="./images/logohealthyco.white-removebg-preview.png" alt="">
+        </div>
            <div class="headeraccess">
             <div class="search">
                 <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
@@ -39,7 +41,7 @@
               <div class="navlogo"><h3><a href="">HEALTHYCO.</a></h3></div>
                 <ul class="nav">
                     <li><a href="./homepatient.html">Home</a></li>
-                    <li><a href="./messagepatient.html">Messages</a></li>
+                    <li><a href="./messagepatient.html" id="openMessages">Messages</a></li>
                     <li class="dropdown">
                         <p>Progress</p>
                         <ul class="submenu">
@@ -56,39 +58,63 @@
                     </li>
                     <li><a href="./patientfiles.html">Files</a></li>
                     <li><a href="./patienthealthupdates.html">Health Updates</a></li>
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <p>Support</p>
                         <ul class="submenu">
                             <li><a href="./patientticketsupport.html">Send a ticket</a></li>
                             <li><a href="./patientfqasupport.html">FQA</a></li>
                             <li><a href="./patientlearnmore.html">Learn More</a></li>
                         </ul>
-                    </li>
-                    <li class="dropdown">
+                    </li> -->
+                    <!-- <li class="dropdown">
                         <p>Communities</p>
                         <ul class="submenu">
                             <li><a href="">Community</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
             </div> 
         </nav>
 
     <section class="homebody">
+        <div class="homebanner">
+            <div class="homebannertext">
+                <p>Access your Doctor from anywhere.</p>
+            </div>
+      <div class="homeimage">
+        <img src="./images/consultationinimation.jpg" alt="">
+    </div>
+        </div>
         <div class="cards">
             <div class="progress">
           
                <div class="chart">
-                <div class="gaugechart">
+                <div class="outer">
+
+                    <div class="inner">
+                        <div id="number">
+                            <p>80%</p>
+                        </div>
+                    </div>
 
                 </div>
 
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="150px" height="150px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#e91e63" />
+                            <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="75" cy="75" r="65" stroke-linecap="round" />
+                </svg>
 
                </div>
 
                <div class="description">
                     <h3>Check Your Progress!</h3>
                     <p>
+                        <br>
                         congratulations! 
                         <br>
                         <br>
@@ -137,7 +163,7 @@
             <div class="messagecontent">
         <p>Ways to feel better about your situation:</p>
 
-        <span class="timestamp">10:28 AM</span>
+        <span class="timestamp">{timeposted}</span>
 
             </div>
 
@@ -147,8 +173,9 @@
             </div>
 
             <div class="communityactions">
-                <i>like</i> 
-                <p>{no of comments}Comment</p>
+                <i class='bx bxs-like'></i>
+                <i class='bx bxs-dislike' ></i>
+                <p>{noofcomments}Comment</p>
 
             </div>
         </div>
@@ -198,5 +225,6 @@
     </footer>
 
     <script src="js/nav.js"></script> 
+    <script src="js/chart.js"></script>
 </body>
 </html>

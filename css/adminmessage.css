@@ -1,0 +1,54 @@
+.messagenav{
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    position: fixed;
+    top: 90px;
+    left: 7%;
+    height: 90vh;
+    cursor: pointer;
+}
+.searchmessages {
+padding-top: 3%;
+}
+.messagenav .messageslogo{
+    padding: 40px 80px 10px 15px;
+    border-bottom: 1px solid #CCCCCC; 
+}
+.messagesnav a{
+    text-decoration: none;
+    color: rgb(4, 4, 85);
+    font-size: x-large;
+    font-weight: bold;
+}
+.messagesender a {
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+.messagesender a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 70px 10px 70px;
+    font-size: 18px;
+}
+.messagesender ul li a:hover{
+  background-color: rgba(223, 228, 252, 0.397);
+}
+.messages {
+    width: 70%;
+    padding-left: 27%;
+    padding-top: 6%;
+}
+.sendmessage {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 20px;
+    width: 67%;
+    left: 26%;
+}

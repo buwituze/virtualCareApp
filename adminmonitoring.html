@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
 
+<!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 <link rel="stylesheet" type="text/css" href="admin.css">
 <link rel="stylesheet" href="css/logoutbutton.css">
 <link rel="stylesheet" href="css/admin.css">
@@ -12,6 +13,7 @@
 <link rel="stylesheet" href="css/adminheader.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+<!-- <link rel="stylesheet" href="css/adminnav.css"> -->
 </head>
 <body>
 
@@ -38,12 +40,13 @@
             </div>
         </header>
 
-      
+       
         <nav>
             <div class="navbar">
               <div class="navlogo"><h3><a href="">HEAL</a></h3></div>
                 <ul class="nav">
-                  
+                    <!-- <li> <a href=""><i class='bx bx-user-circle'></i></a> </li>
+                    <li><a href=""><i class='bx bx-bell'></i></a></li> -->
                     <li><a href="./adminrequests.html"><i class='bx bxs-file'></i></a></li>
                     <li><a href="./adminmassege.html"><i class='bx bxs-message-dots' ></i></a></li>
                     <li><a href="./admin.html"><i class='bx bxs-user-account'></i></a></li>
@@ -62,32 +65,20 @@
         </nav>
 
 
+
     <section class="admindashboard">
 
 <div class="container">
     <h1>Admin Dashboard</h1>        
-    
-    <div class="card" id="user-management">
-        <div class="card-header">User Management</div>
-        <div class="card-body">
-            <table class="table table-striped" id="userTable">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Username</th>
-                        <th>Email</th>
-                        <th>Role</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- User rows will be populated here -->
-                </tbody>
-            </table>
-        </div>
+  
+    <div class="card mt-4" id="system-monitoring">
+    <div class="card-header">System Monitoring</div>
+    <div class="card-body">
+        <!-- Content from different tickets sent for monitoring system performance -->
     </div>
+</div>
 
-    </div>
+</div>
 </section>
 </section>
 

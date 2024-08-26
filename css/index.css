@@ -14,9 +14,28 @@ body{
 .homebody{
     width: 75%;
 }
+.homebanner {
+    margin-top: 7%;
+    margin-left: -2%;
+    display: flex;
+    gap: 10px;
+    width: 107%;
+    height: 50vh;
+    background-color: white;
+}
+.homebanner img{
+    margin-left: -40%;
+    width: 350px;
+    height: 300px;
+}
+.homebannertext{
+    width: 45%;
+    padding-top: 10%;
+    padding-left: 20%;
+}
 .cards{
     display: flex;
-    padding-top: 11%;
+    padding-top: 1%;
     padding-right: 5%;
     width: 100%;
     gap: 20px;
@@ -24,14 +43,16 @@ body{
 .progress{
     width: 47%;
     background-color: white;
-    border: 2px solid green;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
     padding: 20px 30px 40px 30px;
-    height: 30vh;
+
     align-content: center;
 }
 .description h3{
     color: green;
     font-size: 20px;
+    text-align: center;
 }
 .description p{
     padding-top: 8px;
@@ -52,7 +73,8 @@ body{
 .upcomingschedules{
     width: 53%;
     background-color: white;
-    border: 2px solid rgb(23, 0, 128);
+    border: 1px solid #cccccc;
+    border-radius: 20px;
     padding: 20px 15px 40px 15px;
     height: 30vh;
 }
@@ -110,8 +132,11 @@ body{
     gap: 15%;
     float: right;
     padding-right: 10px;
-    color: rgb(23, 0, 128);
+    color: rgb(39, 39, 39);
    
+}
+.communityactions i{
+    padding-top: 5px;
 }
 .likedby span{
     color: rgb(255, 255, 255);

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Messages</title>
+
+<!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+<link rel="stylesheet" type="text/css" href="admin.css">
+<link rel="stylesheet" href="css/logoutbutton.css">
+<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="css/adminnav.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/messagepatient.css">
+<link rel="stylesheet" href="css/adminmessage.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!-- <link rel="stylesheet" href="css/adminnav.css"> -->
+</head>
+<body>
+
+    <section class="admindashboard">
+
+        <header>
+            <div class="headercontents">
+               <div class="logo"><h3>HEALTHYCO.</h3></div>
+               <div class="headeraccess">
+                <div class="search">
+                    <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
+                    <button type="submit">Search</button>
+                </div>
+                <div class="icons">
+                <div class="Profile">
+                    <a href=""><i class='bx bx-bell'></i></a>
+                </div>
+                <div class="Profile">
+                    <a href=""><i class='bx bx-user-circle'></i></a>
+                </div>
+                </div>
+               </div>
+            </div>
+        </header>
+
+        
+        <nav>
+            <div class="navbar">
+              <div class="navlogo"><h3><a href="">HEAL</a></h3></div>
+                <ul class="nav">
+                    <!-- <li> <a href=""><i class='bx bx-user-circle'></i></a> </li>
+                    <li><a href=""><i class='bx bx-bell'></i></a></li> -->
+                    <li><a href="./adminrequests.html"><i class='bx bxs-file'></i></a></li>
+                    <li><a href="./adminmassege.html"><i class='bx bxs-message-dots' ></i></a></li>
+                    <li><a href="./admin.html"><i class='bx bxs-user-account'></i></a></li>
+                 
+                    <li><a href="./adminprogress.html"><i class='bx bxs-chart'></i></a></li>
+                    <li><a href="./adminmonitoring.html"><img src="images/operating-system.png" alt=""></a></li>
+                    <li><a href=""><li><a href="./admincommunities.html"><i class='bx bxs-group'></i></a></li>
+                </a></li>
+                   
+                </ul>
+
+                <button id="logout-btn">Exit</button>
+
+            </div> 
+
+        </nav>
+
+        <section class="mainbody">
+
+                <div class="messagenav">
+                  <div class="messageslogo"><h3><a href="/adminmassege.html">Messages</a></h3>
+              </div>
+    
+                <div class="searchmessages">
+                    <input type="search" placeholder="Search People" name="searchbar" id="searchitem"> <button class="searchbutton"><i class='bx bx-search' ></i></button>
+                </div>
+                    <div class="messagesender"> 
+                        <a href="">{doctorname}</a>
+                        <a href="">{username}</a>
+                </div> 
+
+                </div>
+            
+            
+            <div class="messagestitle">
+                <h1>Messaging {username}</h1>
+            </div>
+    
+            <section class="messages">
+                <div class="message-container">
+                    <div class="message outgoing">
+                        <h3>{username}</h3>
+                        <p>{message}</p>
+                        <span class="timestamp">10:28 AM</span>
+                    </div>
+                    <div class="message incoming">
+                        <img src="" alt="profilepicture" class="profile-picture">
+                        <div class="message-content">
+                            <h3>{senderusername}</h3>
+                            <p>{message}</p>
+                            <span class="timestamp">03:54 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sendmessage">
+                    <textarea id="message" placeholder="Message"></textarea>
+                    <div class="sendmessageactions">
+                        <label for="file-input">
+                            <span class="icon">📷</span>
+                        </label>
+                        <input type="file" id="file-input" style="display: none;">
+    
+                        <label for="file-input">
+                            <span class="icon">📄</span>
+                        </label>
+                        <input type="file" id="file-input" style="display: none;">
+    
+                        <span class="icon emoji-icon">😊</span>
+                        <button type="submit">Send</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="admin.js"></script>
+<script src="logout.js"></script>
+<script src="performance.js"></script>
+
+
+</body>
+</html>

@@ -75,74 +75,102 @@
             </div> 
         </nav>
 
-
     <section class="logprogress">
-
-
         <div class="logprogressform">
-
             <form action="">
-
                 <h2>Log Progress</h2>
-
+    
                 <label for="title">Title</label>
-                <input type="text" name="title" placeholder="What is your progress related to?" id="">
-
+                <input type="text" name="title" placeholder="What is your progress related to?" id="" required>
+    
                 <label for="description">Description</label>
                 <input type="text" name="description" placeholder="Enter Progress Description" id="">
-
-                <label for="age">Age</label>
-                <input type="number" name="age" placeholder="Enter your age" id="" required>
-
-                <label for="Symptoms">Share Your Progess</label>
+    
+                <label for="age">Corresponding Doctor</label>
+                <input type="text" name="doctor" placeholder="Corresponding Doctor" id="" required>     
+    
+                <h5>Current Symptoms</h5>
+                <label for="symptoms">Select Your Symptoms</label>
                 <select name="symptompicklist" id="symptompicklist" required class="relatedlists">
-                    <option value="fever">No Progress</option>
+                    <option value="no-progress">No Progress</option>
                     <option value="fever">Fever</option>
                     <option value="cough">Cough</option>
                     <option value="sneezing">Sneezing</option>
-                    <option value="runnynose">Rushes</option>
+                    <option value="runnynose">Rashes</option>
                     <option value="sorethroat">Sore Throat</option>
                     <option value="headache">Headache</option>
                     <option value="diarrhea">Diarrhea</option>
                     <option value="vomiting">Vomiting</option>
                     <option value="nausea">Nausea</option>
-                    <option value="fatigue">Fatigue</option>   
-                    <option value="fever">Other...</option> 
-                    
+                    <option value="fatigue">Fatigue</option>
+                    <option value="other">Other...</option>
                 </select>
-                
+    
                 <label for="other">Other Symptoms</label>
-                <textarea name="Symptoms" id="" cols="30" rows="10"></textarea>
-
-                <label for="photo">Photo</label>
+                <textarea name="otherSymptoms" id="otherSymptoms" cols="30" rows="3" placeholder="Describe other symptoms..."></textarea>
+    
+                <h5>General Well-being</h5>
+                <label for="wellbeing">How do you feel overall?</label>
+                <select name="wellbeing" id="wellbeing" class="relatedlists" required>
+                    <option value="">Select an option</option>
+                    <option value="better">Better</option>
+                    <option value="same">Same</option>
+                    <option value="worse">Worse</option>
+                </select>
+    
+                <h5>Medication Tracking</h5>
+                <label for="medication">Are you taking any medication?</label>
+                <select name="" id="" required>
+                    <option value="">Select an option</option>
+                    <option value="">Yes</option>
+                    <option value="">Yes, but irregularlly</option>
+                    <option value="">No</option>
+                </select>
+                <textarea name="medication" id="medication" cols="30" rows="3" placeholder="List your medication and dosages..."></textarea>
+    
+                <label for="sideEffects">Any side effects?</label>
+                <select name="" id="" required>
+                    <option value="">Select an option</option>
+                    <option value="">Yes</option>
+                    <option value="">Not Sure</option>
+                    <option value="">No</option>
+                </select>
+                <textarea name="sideEffects" id="sideEffects" cols="30" rows="3" placeholder="Describe any side effects..."></textarea>
+    
+                <h5>Daily Activities</h5>
+                <label for="activities">Can you perform daily activities?</label>
+                <select name="" id="">
+                    <option value="">Select an option</option>
+                    <option value="">Yes</option>
+                    <option value="">Sometimes</option>
+                    <option value="">No</option>
+                </select>
+                <textarea name="activities" id="activities" cols="30" rows="3" placeholder="Describe your daily activities..."></textarea>
+    
+                <h5>File Upload</h5>
+                <label for="photo">Upload Photo or Document</label>
                 <input type="file" name="photo" id="">
-
+    
                 <label for="comments">Additional Comments</label>
-                <input type="text" name="comments" id="">
-
+                <textarea name="comments" id="comments" cols="30" rows="3" placeholder="Any additional comments or concerns..."></textarea>
+    
+                <!-- <h3>Follow-up or Actions</h3>
                 <label for="Schedule">Schedule Submission</label>
-                <Select name="Schedule" id="Schedule" class="relatedlists">
+                <select name="Schedule" id="Schedule" class="relatedlists">
                     <option value="none">None</option>
                     <option value="daily">Daily</option>
                     <option value="weekly">Weekly</option>
                     <option value="monthly">Monthly</option>
-
-                </Select>
-
-                <label for="Scheduletime"></label>
-                <input type="datetime-local" name="" id="">
-
-
+                </select>
+    
+                <label for="Scheduletime">Select Date and Time</label>
+                <input type="datetime-local" name="Scheduletime" id="Scheduletime"> -->
+    
                 <button type="submit">Submit</button>
-
-
             </form>
         </div>
-
-
-
     </section>
-
+    
 
 
     </section>
@@ -154,5 +182,6 @@
     </footer>
 
     <script src="js/nav.js"></script> 
+    <script src="js/logprogress.js"></script>
 </body>
 </html>

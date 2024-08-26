@@ -2,13 +2,14 @@
     background-color: white;
     border: 1px solid #CCCCCC;
     position: fixed;
-    top: 90px;
+    top: 70px;
     left: 0;
-    height: 80vh;
+    height: 85vh;
     cursor: pointer;
 }
 .navbar .navlogo{
-    padding: 40px 80px 10px 15px;
+    padding: 40px 80px 30px 35px;
+    text-align: center;
     border-bottom: 1px solid #CCCCCC; 
 }
 .navlogo a{
@@ -29,6 +30,7 @@ ul li a {
     color: black;
     padding: 10px 70px 10px 70px;
     font-size: 18px;
+    border-bottom: 1px solid #CCCCCC;
 }
 ul li a:hover{
   background-color: rgba(223, 228, 252, 0.397);
@@ -41,6 +43,7 @@ ul li a:hover{
     padding: 10px 70px 10px 70px;
     font-size: 17px;
     cursor: pointer;
+    border-bottom: 1px solid #CCCCCC;
 }
 
 .dropdown p:hover {

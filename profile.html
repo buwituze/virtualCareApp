@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+
+    <header>
+        <div class="headercontents">
+           <div class="logo"><h3><a href="">HEALTHYCO.</a></h3></div>
+           <div class="headeraccess">
+            <div class="search">
+                <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
+                <button type="submit">Search</button>
+            </div>
+            <div class="icons">
+            <div class="Profile">
+                <a href=""><i class='bx bx-bell'></i></a>
+            </div>
+            <div class="Profile">
+                <a href=""><i class='bx bx-user-circle'></i></a>
+            </div>
+            </div>
+           </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="profileheader">
+            <h1>Profile</h1>
+        </div>
+
+        <div class="profilecontent">
+
+        <aside>
+            <div class="avatar">
+                <img src="images/computer.png" alt="Avatar">
+                <h2>{registeredname}</h2>
+            </div>
+            <ul>
+                <li class="active" onclick="showSection('profile')"><a href="#profile-section">Profile</a></li>
+                <li onclick="showSection('doctors')"><a href="#doctors-section">Doctors</a></li>
+                <li> Medical History
+                    <ul id="history-dropdown" class="dropdown">
+                        <li onclick="showSection('departments')"><a href="#departments-section">Departments</a></li>
+                        <li onclick="showSection('illnesses')"><a href="#illnesses-section">Illnesses</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <main>
+            <section id="profile-section" class="active">
+                <div class="profile-info">
+                    <div>Name: <span>{registeredname}</span></div>
+                    <div>Username: <span>{registered username}</span></div>
+                    <div>Email: <span>{registered email}</span></div>
+                    <div>Location: <span>Kigali, Rwanda</span></div>
+                    <div>Language Setting: <span>English</span></div>
+                    <div>Timezone: <span>GMT-5</span></div>
+                    <button>Edit Profile</button>
+                </div>
+            </section>
+            <section id="doctors-section">
+                <h2>Doctors</h2>
+                <div class="doctor">Dr. Smith</div>
+                <div class="divider"></div>
+                <div class="doctor">Dr. Johnson</div>
+                <div class="divider"></div>
+                <div class="doctor">Dr. Lee</div>
+            </section>
+            <section id="departments-section">
+                <h2>Departments</h2>
+                <div class="department">
+                    <div>Dermatology</div>
+                    <div class="divider"></div>
+                    <div>Dr. Smith - Acne Treatment</div>
+                </div>
+            </section>
+            <section id="illnesses-section">
+                <h2>Illnesses</h2>
+                <div class="illness">
+                    <div>Acne</div>
+                    <div class="divider"></div>
+                    <div>Dr. Smith - Dermatology</div>
+                    <div>Progress: Improved</div>
+                </div>
+            </section>
+        </main>
+    </div>
+    </div>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>

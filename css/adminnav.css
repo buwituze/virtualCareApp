@@ -1,0 +1,73 @@
+
+.navbar{
+    background-color: rgb(4, 4, 85);
+    border: 1px solid #CCCCCC;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 7%;
+    height: 100vh;
+    cursor: pointer;
+}
+.navlogo{
+    padding: 10px 10px 5px 2px;
+}
+.navlogo a{
+    text-decoration: none;
+    color: rgb(4, 4, 85);
+    font-size: x-large;
+    font-weight: bold;
+}
+.navbar ul {
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+ul li a i {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px 34px 15px 25px;
+    font-size: 35px;
+}
+ul li a i:hover{
+  background-color: rgba(223, 228, 252, 0.397);
+}
+ul li a img:hover{
+    background-color: rgba(223, 228, 252, 0.397);
+  }
+nav img{
+    width: 40%;
+    height: 10%;
+    padding: 15px 34px 15px 25px;
+}
+.dropdown p {
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px 10px 5px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.dropdown p:hover {
+    background-color: rgba(223, 228, 252, 0.397);
+}
+
+.submenu{
+    display: none;
+}
+
+.submenu li a{
+    padding: 5px 70px 10px 30px;
+}
+.navbar button {
+    background-color: white;
+    color: rgb(4, 4, 85);
+    padding: 7px 20px;
+    margin-left: 10%;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}

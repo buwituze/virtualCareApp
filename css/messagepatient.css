@@ -13,19 +13,18 @@ body{
     width: 100%;
 }
 
-
 .messages {
     width: 70%;
     padding-left: 25%;
-    padding-top: 6%;
+    padding-top: 4%;
 }
 .messagestitle h1 {
     width: 100%;
     font-size: 18px;
     font-weight: 400;
     position: fixed;
-    top: 91px;
-    left: 18.8%;
+    top: 71px;
+    left: 23.5%;
     background-color: white;
     height: 40px;
     border-bottom: 1px solid #cccccc;
@@ -34,6 +33,7 @@ body{
 }
 
 .message-container {
+    display: none;
     margin-bottom: 20px;
 }
 
@@ -42,18 +42,18 @@ body{
     margin-bottom: 20px;
     padding: 15px;
     border-radius: 10px;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
 }
 
 .message.outgoing {
-    background-color: rgb(188, 238, 195);
+    background-color: rgba(188, 238, 195, 0.719);
     margin-left: auto;
 }
 
 .message.incoming {
-    background-color: rgb(198, 188, 238);
+    background-color: rgba(198, 188, 238, 0.637);
     display: flex;
 }
 
@@ -91,7 +91,7 @@ body{
     background-color: #fff;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
-    bottom: 60px;
+    bottom: 20px;
     width: 70%;
     left: 25%;
 }
