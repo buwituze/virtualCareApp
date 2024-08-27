@@ -3,34 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/myprogress.css">
+    <title>Upload Files</title>
+    <link rel="stylesheet" href="css/files.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
-    <title>My Progress</title>
 </head>
 <body>
-    <header>
-        <div class="headercontents">
-           <div class="logo"><h3>HEALTHYCO.</h3></div>
-           <div class="headeraccess">
-            <div class="search">
-                <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
-                <button type="submit">Search</button>
-            </div>
-            <div class="icons">
-            <div class="Profile">
-                <a href=""><i class='bx bx-bell'></i></a>
-            </div>
-            <div class="Profile">
-                <a href=""><i class='bx bx-user-circle'></i></a>
-            </div>
-            </div>
-           </div>
-        </div>
-    </header>
-    
     <section class="mainbody">
         <nav>
             <div class="navbar">
@@ -52,7 +31,13 @@
                             <li><a href="./patientcreateschedule.html">Create Schedule</a></li>
                         </ul>
                     </li>
-                    <li><a href="./patientfiles.html">Files</a></li>
+                    <li class="dropdown">
+                        <p>Files</p>
+                        <ul class="submenu">
+                            <li><a href="./docotrfiles.html">Medical Files</a></li>
+                            <li><a href="./uploadfiles.html">Upload File</a></li>
+                        </ul>
+                    </li>
                     <li><a href="./patienthealthupdates.html">Health Updates</a></li>
                     <li class="dropdown">
                         <p>Support</p>
@@ -72,45 +57,33 @@
             </div> 
         </nav>
 
-    <section class="myprogress">
 
-        <div class="myprogresssearch">
-            <input type="search" placeholder="Search My Progress" name="searchbar" id="searchitem">
-            <button type="submit">Search</button>
-        </div>
+               
+<section class="uploadfiles">
+    <h2>Upload Files Here</h2>
+    <div class="uploadedfiles"></div>
 
-      <div class="allLatestprogress">
-
-        <h3> My Progress</h3>
+    <div class="fileupload">
+        <label for="">File Title</label>
+        <input type="text" id="title" placeholder="Enter File Title">
         
-        <!-- <div class="latestprogress">
-            <div class="checkprogress">
-                <div class="progressstatus"></div>
+        <label for="recipient">Choose Recipient:</label>
+        <select id="recipient">
+            <option value="">Select User</option>
+            <option value="patient">Patient User</option>
+            <option value="healthworker">Health Worker User</option>
+        </select>
 
-            <div class="latestprogresstitle"><h4>Progress on {title}. Corresponding Doctor: {doctorname}</h4></div>
-</div>
+       
+        <label for="file">Choose File</label>
+        <input type="file" id="file">
+        <button id="upload">Upload</button>
 
-           
-            <p>You're right on track! {Username}, continue on this trajectory and you'll get better in no time! </p>
-          </div> -->
-
-          <!-- <div class="latestprogress" id="latestprogressid">
-
-            <div class="checkprogress">
-                <div class="progressstatus"></div>
-
-            <div class="latestprogresstitle"><h4>Progress on {illnessname}. Corresponding Doctor: {doctorname}</h4></div>
-</div>
-
-           
-            <p>You're right on track! {Username}, continue on this trajectory and you'll get better in no time! </p>
-          </div> -->
-
-
-      </div>
-
-    </section>
-
+        <label for="link">Link to file</label>
+        <input type="text" id="link" placeholder="File link">
+        <button id="uploadlink">Upload</button>
+    </div>
+</section>
 
 
     </section>
@@ -122,6 +95,7 @@
     </footer>
 
     <script src="js/nav.js"></script> 
-    <script src="js/myprogress.js"></script>
+    <script src="js/uploadfiles.js"></script>
+
 </body>
 </html>
