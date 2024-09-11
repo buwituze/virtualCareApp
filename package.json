@@ -1,0 +1,18 @@
+{
+  "name": "healthco",
+  "version": "1.0.0",
+  "description": "Project aimed at facilitating easy, straightforward, and fast doctor-patient consultation. Through HealthCO. patients can notify their doctors, on how they're doing and gain insights on how to handle their illnesses in a straightforward and time conservative manner.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.20.0",
+    "mysql2": "^3.11.2",
+    "nodemailer": "^6.9.15"
+  }
+}
