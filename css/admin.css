@@ -22,11 +22,24 @@ body {
 }
 
 .card-header {
-    background-color: #007bff;
+    background-color: rgb(4, 4, 85);
     color: white;
-    padding: 10px 15px;
+    padding: 0px 10px;
     font-size: 1.25rem;
     border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.adduserbtn button{
+    background-color: white;
+    border: none;
+  
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;    
 }
 
 .card-body {

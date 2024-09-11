@@ -16,18 +16,17 @@
     <div class="fform">
     <form method="POST" id="registrationForm">
         <label for="username">Username</label>
-        <input type="text" id="username" name="username" required><br><br>
+        <input type="text" id="username" name="username" placeholder="Enter Username" required><br><br>
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <label for="role">Role</label>
-        <select id="role" name="role" required>
-            <option value="0" style="text-align: center; font-weight: bold;">-- Select Role --</option>
-            <option value="household">Household User</option>
-            <option value="waste_service">Waste Collection Service</option>
-            <option value="admin">Administrator</option>
-        </select><br><br>
+        <input type="password" id="password" name="password" placeholder="Enter Password" required><br><br>
+        <label for="password">Confirm Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password" required><br><br>
+        <label for="code">Access Credential</label>
+
+        <input type="text" id="accesscode" name="code" placeholder="Enter Access Code" required>
+        <br><br>
         <button type="submit">Register</button>
     </form>
 

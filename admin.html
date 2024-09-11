@@ -41,12 +41,13 @@
       
         <nav>
             <div class="navbar">
-              <div class="navlogo"><h3><a href="">HEAL</a></h3></div>
+              <div class="navlogo"><h3><a href="">VirtualCare</a></h3></div>
                 <ul class="nav">
-                  
+
+                    <li><a href="./admin.html"><i class='bx bxs-user-account'></i></a></li>
                     <li><a href="./adminrequests.html"><i class='bx bxs-file'></i></a></li>
                     <li><a href="./adminmassege.html"><i class='bx bxs-message-dots' ></i></a></li>
-                    <li><a href="./admin.html"><i class='bx bxs-user-account'></i></a></li>
+                  
                  
                     <li><a href="./adminprogress.html"><i class='bx bxs-chart'></i></a></li>
                     <li><a href="./adminmonitoring.html"><img src="images/operating-system.png" alt=""></a></li>
@@ -63,18 +64,31 @@
 
 
     <section class="admindashboard">
-
+ 
 <div class="container">
-    <h1>Admin Dashboard</h1>        
+    <h1>User Management Dashboard</h1>  
+    
+    <!-- <div class="adduserbtn">
+<button id="addbtn">Add User</button>
+
+    </div> -->
     
     <div class="card" id="user-management">
-        <div class="card-header">User Management</div>
+        <div class="card-header"><h3>System Users</h3> 
+            <div class="adduserbtn">
+                <a href="./adminadduser.html"><button id="addbtn">Add User</button></a>
+                
+                    </div></div>
+       
         <div class="card-body">
             <table class="table table-striped" id="userTable">
                 <thead>
                     <tr>
                         <th>ID</th>
+                        <th>Full Name</th>
                         <th>Username</th>
+                        <th>ID No</th>
+                        <th>Medical License No</th>
                         <th>Email</th>
                         <th>Role</th>
                         <th>Actions</th>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Patient</title>
+    <link rel="stylesheet" href="css/adminadduser.css">
+    <link rel="stylesheet" href="css/adminnav.css">
+<link rel="stylesheet" href="css/adminheader.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <section class="upperpart"> 
+        
+        <header>
+        <div class="headercontents">
+           <div class="applogo"><h3>HEALTHYCO.</h3></div>
+           <div class="headeraccess">
+            <div class="search">
+                <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
+                <button type="submit">Search</button>
+            </div>
+            <div class="icons">
+            <div class="Profile">
+                <a href=""><i class='bx bx-bell'></i></a>
+            </div>
+            <div class="Profile">
+                <a href=""><i class='bx bx-user-circle'></i></a>
+            </div>
+            </div>
+           </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="navbar">
+          <div class="navlogo"><h3><a href="">VirtualCare</a></h3></div>
+            <ul class="nav">
+
+                <li><a href="./admin.html"><i class='bx bxs-user-account'></i></a></li>
+                <li><a href="./adminrequests.html"><i class='bx bxs-file'></i></a></li>
+                <li><a href="./adminmassege.html"><i class='bx bxs-message-dots' ></i></a></li>
+              
+             
+                <li><a href="./adminprogress.html"><i class='bx bxs-chart'></i></a></li>
+                <li><a href="./adminmonitoring.html"><img src="images/operating-system.png" alt=""></a></li>
+                <li><a href=""><li><a href="./admincommunities.html"><i class='bx bxs-group'></i></a></li>
+            </a></li>
+               
+            </ul>
+
+            <button id="logout-btn">Exit</button>
+
+        </div> 
+
+    </nav>
+
+    <section id="admin-section">
+        <form action="" id="user-form">
+
+            <h3>Add Patient</h3>
+
+            <label for="userrole">Role Type</label>
+            <select name="userrole" id="userrole" required>
+                <option value="">--Select role--</option>
+                <option value="patient">Patient</option>
+            </select> 
+
+            <label for="username">Full Name</label> <br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter User's Fullname" required>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter User's Username" required>
+            <label for="username">ID Number</label><br>
+            <input type="number" id="idnumber" name="IDnumber" placeholder="Enter ID number" required>
+            <label for="username">Date of Birth </label>
+            <input type="date">
+            <label for="username">Gender </label>
+            <select name="gender" id="selectgender">
+                <option value="">--Select Gender--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter User's Email" required>
+
+            <label for="Mobile No">Phone Number</label>
+            <input type="number" placeholder="Enter Phone Number (Preferable Whatsapp Number)">
+          
+            <button type="submit">Add User</button>
+
+        </form>
+
+    </section>
+</section>
+
+<script src="js/adminadduser.js"></script>
+</body>
+</html>
