@@ -1,61 +1,52 @@
 const express = require('express');
-const mysql = require('mysql2');
-const nodemailer = require('nodemailer');
-const dotenv = require('dotenv');
-
-dotenv.config();
+const bodyParser = require('body-parser');
+const AssistantV1 = require('ibm-watson/assistant/v1');
+const { IamAuthenticator } = require('ibm-watson/auth');
 
 const app = express();
-app.use(express.json());
+const port = process.env.PORT || 3000;
 
-// MySQL Connection
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',  // replace with your MySQL username
-    password: 'beni3us3smicql!12$M',  // replace with your MySQL password
-    database: 'virtualcareDB'  // your database name
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+const assistant = new AssistantV1({
+  version: '2021-06-14', // Replace with your version
+  authenticator: new IamAuthenticator({
+    apikey: process.env.ASSISTANT_APIKEY,
+  }),
+  serviceUrl: process.env.ASSISTANT_URL,
 });
 
-db.connect((err) => {
-    if (err) throw err;
-    console.log('Connected to MySQL database!');
-});
+let sessionId;
 
-// Nodemailer Configuration
-const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: process.env.EMAIL_USER,  // Your email
-        pass: process.env.EMAIL_PASS   // Your email password
-    }
-});
-
-// Endpoint to add an admin and send a confirmation email
-app.post('/add-admin', (req, res) => {
-    const { username, email, password, access_code } = req.body;
-    const sql = `INSERT INTO admins (username, email, password, access_code) VALUES (?, ?, ?, ?)`;
-
-    db.query(sql, [username, email, password, access_code], (err, result) => {
-        if (err) throw err;
-
-        // Send an email to the admin
-        const mailOptions = {
-            from: process.env.EMAIL_USER,
-            to: email,
-            subject: 'Welcome to VirtualCare!',
-            text: `Hello ${username}, you have been successfully registered as an admin.`
-        };
-
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-                return res.status(500).send('Error sending email');
-            }
-            res.send('Admin registered and email sent!');
-        });
+app.post('/create-session', async (req, res) => {
+  try {
+    const response = await assistant.createSession({
+      assistantId: 'f17dc782-3338-4a73-a03d-933b43423fa0', // Replace with your Assistant ID
     });
+    sessionId = response.result.session_id;
+    res.json({ sessionId });
+  } catch (err) {
+    res.status(500).send(err);
+  }
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+app.post('/message', async (req, res) => {
+  try {
+    const response = await assistant.message({
+      assistantId: 'f17dc782-3338-4a73-a03d-933b43423fa0', // Replace with your Assistant ID
+      sessionId: sessionId,
+      input: {
+        'message_type': 'text',
+        'text': req.body.message,
+      },
+    });
+    res.json(response.result.output.generic[0].text);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Bloom</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "718c03a8-3fd6-44c7-af80-d7ad776df90e", 
+          region: "au-syd", 
+          serviceInstanceID: "dad9e6c3-ebcf-4fad-a33f-2767d028e642", 
+          onLoad: async (instance) => { 
+            await instance.render(); 
+            instance.openWindow(); // Automatically opens the chat 
+          }
+        };
+        setTimeout(function(){
+          const t = document.createElement('script');
+          t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + 
+                  (window.watsonAssistantChatOptions.clientVersion || 'latest') + 
+                  "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+    </script>
+</body>
+</html>
