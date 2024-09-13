@@ -13,15 +13,21 @@
     <title>Create Schedules</title>
 </head>
 <body>
+   
     <header>
         <div class="headercontents">
-           <div class="logo"><h3>HEALTHYCO.</h3></div>
+           <div class="logo">
+             <img src="./images/virtualcarelogo-removebg-preview.png" alt="">
+        </div>
            <div class="headeraccess">
             <div class="search">
                 <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
                 <button type="submit">Search</button>
             </div>
+            <div class="aibutton"><button onclick="window.location.href='chat.html'">Ask AI</button></div>
             <div class="icons">
+                
+
             <div class="Profile">
                 <a href=""><i class='bx bx-bell'></i></a>
             </div>
@@ -39,7 +45,7 @@
               <div class="navlogo"><h3><a href="">HEALTHYCO.</a></h3></div>
                 <ul class="nav">
                     <li><a href="./homepatient.html">Home</a></li>
-                    <li><a href="./messagepatient.html">Messages</a></li>
+                    <li><a href="./messagepatient.html" id="openMessages">Messages</a></li>
                     <li class="dropdown">
                         <p>Progress</p>
                         <ul class="submenu">
@@ -56,20 +62,20 @@
                     </li>
                     <li><a href="./patientfiles.html">Files</a></li>
                     <li><a href="./patienthealthupdates.html">Health Updates</a></li>
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <p>Support</p>
                         <ul class="submenu">
                             <li><a href="./patientticketsupport.html">Send a ticket</a></li>
                             <li><a href="./patientfqasupport.html">FQA</a></li>
                             <li><a href="./patientlearnmore.html">Learn More</a></li>
                         </ul>
-                    </li>
-                    <li class="dropdown">
+                    </li> -->
+                    <!-- <li class="dropdown">
                         <p>Communities</p>
                         <ul class="submenu">
                             <li><a href="">Community</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
             </div> 
         </nav>
@@ -96,15 +102,16 @@
                         <option value="monthly">Dermatology</option>
                     </select><br><br>
 
-                    <label for="doctors">Related Doctor</label>
+                    <label for="doctors">Related Doctor</label> <br>
                     <select name="doctors" id="relateddoctors">
-                        <option value="doctor1">Dr.{doctorName}</option>
-                        <option value="doctor1">Dr.{doctorName}</option>
-                        <option value="doctor1">Dr.{doctorName}</option>
+                        <option value="doctor1">Dr.Kimana</option>
+                        <option value="doctor1">Dr.Murekezi</option>
+                        <option value="doctor1">Dr.Jack</option>
+                        <option value="doctor1">Dr.Jack</option>
 
                     </select>
-
-                    <label for="doctoravailability">Dr.{doctorname} is available on</label>
+<br> <br>
+                    <label for="doctoravailability">Pick Time</label> <br> 
                     <select name="doctoravailability" id="doctoravbalability">
                         <option value="Monday">Monday from 8:00 AM to 5:00 PM</option>
                         <option value="Tuesday">Tuesday from 2:00 PM to 5:00 PM</option>
@@ -112,7 +119,7 @@
                         <option value="Friday">Friday from 10:00 PM to 5:00 PM</option>
                         <option value="Saturday">Saturday from 11:00 AM to 4:00 PM</option>
                     </select>
-
+ <br> <br>
                     <label for="description">Description</label><br><br>
                     <input type="text" id="description" name="description" required><br><br>
 
@@ -138,8 +145,7 @@
         </div>
      
     </section>
-
-    <br> <br>
+<br>
 
     <footer>
         <p>&copy; 2024 HealthyCo. App. All rights reserved.</p>

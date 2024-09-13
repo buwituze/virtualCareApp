@@ -10,7 +10,7 @@ header {
 }
 .headercontents{
     display: flex;
-    gap: 20%;
+    gap: 10%;
     padding-top: 20px;
 }
 .logo{
@@ -18,9 +18,10 @@ header {
     cursor: pointer;
 }
 .logo img{
-    margin-top: -15%;
+    margin-top: -35%;
+    margin-left: -10%;
     width: 220px;
-    height: 100px;
+    height: 180px;
 }
 .search {
     display: flex;
@@ -48,9 +49,18 @@ header .search button{
     display: flex;
     gap: 100px;
 }
+.aibutton button {
+    padding: 10px;
+    border: none;
+    background-color: rgb(22, 12, 119);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .icons {
     display: flex;
-    gap: 40px;
+    gap: 20px;
+    margin-left: -40px;
 }
 .Profile a i {
  color: rgb(73, 72, 72);

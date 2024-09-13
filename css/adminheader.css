@@ -1,68 +1,79 @@
 header {
-    height: 90px;
+    height: 70px;
     width: 100%;
-    background-color: rgb(4, 4, 85);
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
+    border-bottom: 1px solid rgb(212, 212, 250);
+    z-index: 2;
 }
 .headercontents{
     display: flex;
-    gap: 20%;
-    padding-top: 30px;
+    gap: 10%;
+    padding-top: 20px;
 }
-.applogo{
+.logo{
     padding-left: 30px;
-    margin-top: -2.05%;
-    color: white;
-    font-size: x-large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: pointer;
 }
-
+.logo img{
+    margin-top: -35%;
+    margin-left: -10%;
+    width: 220px;
+    height: 180px;
+}
 .search {
     display: flex;
     gap: 2px;
 }
 .search input {
     border: none;
+    border: 1px solid #cccccc;
    width: 500px; 
    border-radius: 15px;
    height: 35px;
    padding-left: 16px;
-   margin-top: -5px;
 }
 header .search button{
     border: none;
     cursor: pointer;
     color: rgb(22, 12, 119);
     background-color: rgb(255, 255, 255);
-    margin-top: -3px;
     padding: 3px 10px 3px 10px;
     height: 5vh;
 }
-.icons{
-    display: flex;
-    gap: 40px;
-}
+
 .headeraccess{
     padding-right: 40px;
     display: flex;
     gap: 100px;
 }
-
-.Profile a i {
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
+.aibutton button {
+    padding: 10px;
     border: none;
-    background-color: transparent;
-    padding: 3px;
+    background-color: rgb(22, 12, 119);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.icons {
+    display: flex;
+    gap: 20px;
+    margin-left: -40px;
+}
+.Profile a i {
+ color: rgb(73, 72, 72);
+ cursor: pointer;
+ text-decoration: none;
+ border: none;
+ background-color: transparent;
+ padding: 3px;
 }
 .Profile a i:hover {
-       border-radius: 20px;
-       background-color: rgba(248, 248, 255, 0.418);
-}
+    border-radius: 20px;
+    background-color: rgba(209, 209, 250, 0.418);
+   }
 .Profile a i{
-       font-size: 30px;
+    font-size: 25px;
 }

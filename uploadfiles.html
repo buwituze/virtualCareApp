@@ -5,30 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload Files</title>
     <link rel="stylesheet" href="css/files.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/adminheader.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
+    <header>
+        <div class="headercontents">
+           <div class="logo">            
+             <img src="./images/virtualcarelogo-removebg-preview.png" alt="">
+           </div>
+           <div class="headeraccess">
+            <div class="search">
+                <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
+                <button type="submit">Search</button>
+            </div>
+            <div class="aibutton"><button onclick="window.location.href='chat.html'">Ask Bloom</button></div>
+            <div class="icons">
+
+                
+                
+            <div class="Profile">
+                <a href=""><i class='bx bx-bell'></i></a>
+            </div>
+            <div class="Profile">
+                <a href=""><i class='bx bx-user-circle'></i></a>
+            </div>
+            </div>
+           </div>
+        </div>
+    </header>
+    
     <section class="mainbody">
         <nav>
             <div class="navbar">
-              <div class="navlogo"><h3><a href="">HEALTHYCO.</a></h3></div>
+              <div class="navlogo">Virtualcare</div>
                 <ul class="nav">
-                    <li><a href="./homepatient.html">Home</a></li>
-                    <li><a href="./messagepatient.html">Messages</a></li>
+                    <li><a href="./homedoctor.html">Home</a></li>
+                    <li><a href="./doctormessage.html">Messages</a></li>
+                    <li><a href="./Patientslist.html">My Patients</a></li>
                     <li class="dropdown">
                         <p>Progress</p>
                         <ul class="submenu">
-                            <li><a href="./myprogress.html">My Progress</a></li>
-                            <li><a href="./logprogress.html">Log Progress</a></li>
+                            <li><a href="./doctor'sprogress.html">All Progress</a></li>
+                            <li><a href="./doctorindividualprogress.html">Patient Progress</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <p>Schedule</p>
                         <ul class="submenu">
-                            <li><a href="./patientschedules.html">All Schedules</a></li>
-                            <li><a href="./patientcreateschedule.html">Create Schedule</a></li>
+                            <li><a href="./doctorschedules.html">All Schedules</a></li>
+                            <li><a href="./doctorcreateschedule.html">Create Schedule</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -38,50 +67,42 @@
                             <li><a href="./uploadfiles.html">Upload File</a></li>
                         </ul>
                     </li>
-                    <li><a href="./patienthealthupdates.html">Health Updates</a></li>
-                    <li class="dropdown">
-                        <p>Support</p>
-                        <ul class="submenu">
-                            <li><a href="./patientticketsupport.html">Send a ticket</a></li>
-                            <li><a href="./patientfqasupport.html">FQA</a></li>
-                            <li><a href="./patientlearnmore.html">Learn More</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <p>Communities</p>
-                        <ul class="submenu">
-                            <li><a href="">Community</a></li>
-                        </ul>
-                    </li>
+                    <!-- <li><a href="./patienthealthupdates.html">Health Updates</a></li> -->
+
+                   
                 </ul>
             </div> 
         </nav>
-
+        <br> <br>  <br> <br> <br>
 
                
-<section class="uploadfiles">
-    <h2>Upload Files Here</h2>
+<section class="uploadfiles" style="margin-left: 30%; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: white; width: 50%; padding: 10px; border: 1px solid #ccc;"> 
+     <br> <br>
+    <h2>Upload Files Here</h2> <br> <br>
     <div class="uploadedfiles"></div>
 
-    <div class="fileupload">
-        <label for="">File Title</label>
-        <input type="text" id="title" placeholder="Enter File Title">
+    <div class="fileupload" >
+        <label for="">File Title</label> <br>
+        <input type="text" id="title" placeholder="Enter File Title"> <br> <br>
+
+        <label for="">Name</label> <br>
+        <input type="text" id="name" placeholder="Enter Receiver Name here"> <br> <br>
         
-        <label for="recipient">Choose Recipient:</label>
+        <label for="recipient">Choose Recipient:</label> <br> 
         <select id="recipient">
             <option value="">Select User</option>
             <option value="patient">Patient User</option>
             <option value="healthworker">Health Worker User</option>
         </select>
-
+<br> <br>
        
-        <label for="file">Choose File</label>
-        <input type="file" id="file">
-        <button id="upload">Upload</button>
+        <label for="file">Choose File</label> <br>
+        <input type="file" id="file"> <br> <br>
+        <button id="upload">Upload</button> <br> <br>
 
-        <label for="link">Link to file</label>
-        <input type="text" id="link" placeholder="File link">
-        <button id="uploadlink">Upload</button>
+        <label for="link">Link to file</label> <br>
+        <input type="text" id="link" placeholder="File link"> <br> <br>
+        <button id="uploadlink">Upload</button> <br> <br>
     </div>
 </section>
 

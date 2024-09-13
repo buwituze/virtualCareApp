@@ -4,7 +4,7 @@
 
 body{
     width: 100%;
-    background-color: #cccccc;
+    background-color: #ccccccbd;
 }
 
 
@@ -19,10 +19,11 @@ body{
 
 .tracker { 
     padding-top: 3%;
-    margin: 7% 1% 0 20%;
+    padding-bottom: 5%;
+    margin: 4% 1% 0 20%;
     background-color: white;
     padding-left: 3%;   
-    height: 68vh;
+    height: 100%;
 }
 
 .tracker h2{
