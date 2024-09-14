@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sendButton = document.querySelector('.sendmessageactions button');
     const fileInput = document.getElementById('file-input');
     const messageContainer = document.querySelector('.message-container');
-    const currentUser = "Your Name"; // Replace with dynamic user data
+    const currentUser = ""; // Replace with dynamic user data
 
     sendButton.addEventListener('click', function() {
         const messageText = messageInput.value.trim();
