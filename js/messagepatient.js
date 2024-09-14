@@ -59,151 +59,44 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const messageInput = document.getElementById('message');
-//     const sendButton = document.querySelector('.sendmessageactions button');
-//     const fileInput = document.getElementById('file-input');
-//     const messageContainer = document.querySelector('.message-container');
-//     const currentUser = "Your Name"; // Replace with dynamic user data
 
-//     sendButton.addEventListener('click', function() {
-//         const messageText = messageInput.value.trim();
-//         const file = fileInput.files[0]; // Get the attached file
-
-//         if (messageText !== '' || file) {
-//             messageContainer.style.display = 'block'; // Make message-container visible
-
-//             // Create outgoing message div
-//             const outgoingMessage = document.createElement('div');
-//             outgoingMessage.classList.add('message', 'outgoing');
-
-//             let fileAttachment = '';
-//             if (file) {
-//                 const fileURL = URL.createObjectURL(file); // Create a URL for the attached file
-//                 const fileType = file.type.startsWith('image/') ? 'image' : 'file';
-
-//                 if (fileType === 'image') {
-//                     // If the file is an image, display it directly
-//                     fileAttachment = `<img src="${fileURL}" alt="${file.name}" style="max-width: 200px; max-height: 200px;">`;
-//                 } else {
-//                     // Otherwise, display it as a downloadable link
-//                     fileAttachment = `<p><a href="${fileURL}" download="${file.name}">${file.name}</a></p>`;
-//                 }
-//             }
-
-//             outgoingMessage.innerHTML = `
-//                 <h3>${currentUser}</h3>
-//                 <p>${messageText}</p>
-//                 ${fileAttachment}
-//                 <span class="timestamp">${new Date().toLocaleTimeString()}</span>
-//             `;
-
-//             messageContainer.appendChild(outgoingMessage);
-//             messageInput.value = ''; // Clear the input after sending
-//             fileInput.value = ''; // Clear the file input
-//         }
-//     });
-// });
-
-
-// sendButton.addEventListener('click', function() {
-//     const messageText = messageInput.value.trim();
-//     const fileInput = document.getElementById('file-input');
-//     const file = fileInput.files[0];
-
-//     if (messageText !== '' || file) {
-//         messageContainer.style.display = 'block'; // Make message-container visible
-
-//         // Create outgoing message div
-//         const outgoingMessage = document.createElement('div');
-//         outgoingMessage.classList.add('message', 'outgoing');
-
-//         let fileAttachment = '';
-//         if (file) {
-//             const fileURL = URL.createObjectURL(file);
-//             fileAttachment = `<p><a href="${fileURL}" target="_blank">${file.name}</a></p>`;
-//         }
-
-//         outgoingMessage.innerHTML = `
-//             <h3>${currentUser}</h3>
-//             <p>${messageText}</p>
-//             ${fileAttachment}
-//             <span class="timestamp">${new Date().toLocaleTimeString()}</span>
-//         `;
-
-//         messageContainer.appendChild(outgoingMessage);
-//         messageInput.value = ''; // Clear the input after sending
-//         fileInput.value = ''; // Clear the file input
-//     }
-// });
-
-
-// document.querySelector('.navlogo p').addEventListener('click', function() {
-//     window.history.back();
-// });
 document.addEventListener('DOMContentLoaded', function() {
     const messageInput = document.getElementById('message');
     const sendButton = document.querySelector('.sendmessageactions button');
+    const fileInput = document.getElementById('file-input');
     const messageContainer = document.querySelector('.message-container');
-    const currentUser = "Benitha"; // Replace with the logged-in user's name
-    const recipient = "Recipient's Name"; // Replace with the selected recipient (e.g., doctor or patient)
-
-    // Function to retrieve messages from localStorage
-    function loadMessages() {
-        const conversation = JSON.parse(localStorage.getItem('conversation')) || [];
-        messageContainer.innerHTML = ''; // Clear previous messages
-
-        conversation.forEach(message => {
-            const messageDiv = document.createElement('div');
-            messageDiv.classList.add('message', message.sender === currentUser ? 'outgoing' : 'incoming');
-
-            messageDiv.innerHTML = `
-                <h3>${message.sender}</h3>
-                <p>${message.content}</p>
-                <span class="timestamp">${new Date(message.timestamp).toLocaleTimeString()}</span>
-            `;
-
-            messageContainer.appendChild(messageDiv);
-        });
-    }
-
-    // Load the existing conversation when the page is loaded
-    loadMessages();
+    const currentUser = "Your Name"; // Replace with dynamic user data
 
     sendButton.addEventListener('click', function() {
         const messageText = messageInput.value.trim();
-        const fileInput = document.getElementById('file-input');
-        const file = fileInput.files[0];
+        const file = fileInput.files[0]; // Get the attached file
 
         if (messageText !== '' || file) {
-            const conversation = JSON.parse(localStorage.getItem('conversation')) || [];
+            messageContainer.style.display = 'block'; // Make message-container visible
 
-            // Prepare file attachment (if any)
-            let fileAttachment = '';
-            if (file) {
-                const fileURL = URL.createObjectURL(file);
-                fileAttachment = `<p><a href="${fileURL}" target="_blank">${file.name}</a></p>`;
-            }
-
-            const newMessage = {
-                sender: currentUser,
-                recipient: recipient,
-                content: messageText + fileAttachment,
-                timestamp: Date.now(),
-            };
-
-            // Add the new message to the conversation
-            conversation.push(newMessage);
-            localStorage.setItem('conversation', JSON.stringify(conversation));
-
-            // Append the new message to the container
+            // Create outgoing message div
             const outgoingMessage = document.createElement('div');
             outgoingMessage.classList.add('message', 'outgoing');
 
+            let fileAttachment = '';
+            if (file) {
+                const fileURL = URL.createObjectURL(file); // Create a URL for the attached file
+                const fileType = file.type.startsWith('image/') ? 'image' : 'file';
+
+                if (fileType === 'image') {
+                    // If the file is an image, display it directly
+                    fileAttachment = `<img src="${fileURL}" alt="${file.name}" style="max-width: 200px; max-height: 200px;">`;
+                } else {
+                    // Otherwise, display it as a downloadable link
+                    fileAttachment = `<p><a href="${fileURL}" download="${file.name}">${file.name}</a></p>`;
+                }
+            }
+
             outgoingMessage.innerHTML = `
-                <h3>${newMessage.sender}</h3>
-                <p>${newMessage.content}</p>
-                <span class="timestamp">${new Date(newMessage.timestamp).toLocaleTimeString()}</span>
+                <h3>${currentUser}</h3>
+                <p>${messageText}</p>
+                ${fileAttachment}
+                <span class="timestamp">${new Date().toLocaleTimeString()}</span>
             `;
 
             messageContainer.appendChild(outgoingMessage);
@@ -211,4 +104,41 @@ document.addEventListener('DOMContentLoaded', function() {
             fileInput.value = ''; // Clear the file input
         }
     });
+});
+
+
+sendButton.addEventListener('click', function() {
+    const messageText = messageInput.value.trim();
+    const fileInput = document.getElementById('file-input');
+    const file = fileInput.files[0];
+
+    if (messageText !== '' || file) {
+        messageContainer.style.display = 'block'; // Make message-container visible
+
+        // Create outgoing message div
+        const outgoingMessage = document.createElement('div');
+        outgoingMessage.classList.add('message', 'outgoing');
+
+        let fileAttachment = '';
+        if (file) {
+            const fileURL = URL.createObjectURL(file);
+            fileAttachment = `<p><a href="${fileURL}" target="_blank">${file.name}</a></p>`;
+        }
+
+        outgoingMessage.innerHTML = `
+            <h3>${currentUser}</h3>
+            <p>${messageText}</p>
+            ${fileAttachment}
+            <span class="timestamp">${new Date().toLocaleTimeString()}</span>
+        `;
+
+        messageContainer.appendChild(outgoingMessage);
+        messageInput.value = ''; // Clear the input after sending
+        fileInput.value = ''; // Clear the file input
+    }
+});
+
+
+document.querySelector('.navlogo p').addEventListener('click', function() {
+    window.history.back();
 });

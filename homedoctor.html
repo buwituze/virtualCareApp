@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="./css/charts.css">
+
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
     <title>Home</title>
@@ -77,18 +79,34 @@
         <div class="cards">
             <div class="progress">
           
-               <div class="chart">
-                <div class="gaugechart">
+                <div class="chart">
+                    <div class="outer">
+    
+                        <div class="inner">
+                            <div id="number">
+                                <p>70%</p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="150px" height="150px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="75" cy="75" r="65" stroke-linecap="round" />
+                    </svg>
+    
+                   </div>
 
-                </div>
-
-
-               </div>
 
                <div class="description">
                     <h3>Patient's Overall Progress!</h3>
                     <p>
-                       congratulations {doctorname}! 
+                       congratulations Dr.Kimana! 
                        <br>
                        <br>
                        
@@ -112,20 +130,27 @@
 
             <div class="upcomingschedules">
 
-                <h3>Upcoming Schedules i</h3>
+                <h3>Upcoming Schedules</h3>
 
                 <div class="scheduledescription">
 
-                     <h4>{sheduleddate}</h4>
+                     <h4>15/9/2024</h4>
                    
-                    <p>Appointment with {patientname} for {scheduleditem} at {scheduledtime}</p>
+                    <p>Appointment with Benitha for Severe Headache at 12:32 PM</p>
 
                 </div>
+                <div class="scheduledescription">
+
+                    <h4>14/9/2024</h4>
+                  
+                   <p>Appointment with Bukuru JP for Injury follow-up at 13:00</p>
+
+               </div>
         </div>
 
         </div>
 
-        <div class="communitynotifications">
+        <!-- <div class="communitynotifications">
 
             <div class="sendercontent">
 
@@ -152,37 +177,38 @@
             </div>
         </div>
 
+        </div> -->
+
+        <div class="allLatestprogress">
+
+            <h3>Latest Progress</h3>
+            
+            <div class="latestprogress">
+                <div class="checkprogress">
+                    <div class="progressstatus"></div>
+    
+                <div class="latestprogresstitle"><h4>Progress on Headache and Neousea. Corresponding Doctor: Dr.kimana</h4></div>
+    </div>
+    
+               
+                <p>You're right on track! Benitha, continue on this trajectory and you'll get better in no time! </p>
+              </div>
+    
+              <div class="latestprogress">
+    
+                <div class="checkprogress">
+                    <div class="progressstatus"></div>
+    
+                <div class="latestprogresstitle"><h4>Progress on Stomach infection. Corresponding Doctor: Dr.Mwiza</h4></div>
+    </div>
+    
+               
+                <p>You're right on track! Benitha, continue on this trajectory and you'll get better in no time! </p>
+              </div>
+
         </div>
-
-      <div class="allLatestprogress">
-
-        <h3>Latest Progress</h3>
-        
-        <div class="latestprogress">
-            <div class="checkprogress">
-                <div class="progressstatus"></div>
-
-            <div class="latestprogresstitle"><h4>Progress on {illnessname}. Corresponding Doctor: {doctorname}</h4></div>
-</div>
-
-           
-            <p>You're right on track! {Username}, continue on this trajectory and you'll get better in no time! </p>
-          </div>
-
-          <div class="latestprogress">
-
-            <div class="checkprogress">
-                <div class="progressstatus"></div>
-
-            <div class="latestprogresstitle"><h4>Progress on {illnessname}. Corresponding Doctor: {doctorname}</h4></div>
-</div>
-
-           
-            <p>You're right on track! {Username}, continue on this trajectory and you'll get better in no time! </p>
-          </div>
-
-
-      </div>
+    
+    
 
     </section>
 
@@ -197,5 +223,7 @@
     </footer>
 
     <script src="js/nav.js"></script> 
+    <script src="js/chart.js"></script>
+
 </body>
 </html>
