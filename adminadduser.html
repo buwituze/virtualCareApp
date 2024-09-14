@@ -13,50 +13,51 @@
 
     <section class="upperpart"> 
         
+     
         <header>
-        <div class="headercontents">
-           <div class="applogo"><h3>HEALTHYCO.</h3></div>
-           <div class="headeraccess">
-            <div class="search">
-                <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
-                <button type="submit">Search</button>
+            <div class="headercontents">
+               <div class="applogo">             <img src="./images/virtualcarelogo-removebg-preview.png" alt="">
+               </div>
+               <div class="headeraccess">
+                <div class="search">
+                    <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
+                    <button type="submit">Search</button>
+                </div>
+                <div class="aibutton"><button onclick="window.location.href='chat.html'">Ask AI</button></div>
+                <div class="icons">
+                <div class="Profile">
+                    <a href=""><i class='bx bx-bell'></i></a>
+                </div>
+                <div class="Profile">
+                    <a href=""><i class='bx bx-user-circle'></i></a>
+                </div>
+                </div>
+               </div>
             </div>
-            <div class="icons">
+        </header>
 
-                <button onclick="window.location.href='chat.html'">Ask AI</button>
-            <div class="Profile">
-                <a href=""><i class='bx bx-bell'></i></a>
-            </div>
-            <div class="Profile">
-                <a href=""><i class='bx bx-user-circle'></i></a>
-            </div>
-            </div>
-           </div>
-        </div>
-    </header>
+      
+        <nav>
+            <div class="navbar">
+                <ul class="nav">
 
-    <nav>
-        <div class="navbar">
-          <div class="navlogo"><h3><a href="">VirtualCare</a></h3></div>
-            <ul class="nav">
+                    <li><a href="./admin.html"><i class='bx bxs-user-account'></i></a></li>
+                    <li><a href="./adminrequests.html"><i class='bx bxs-file'></i></a></li>
+                    <li><a href="./adminmassege.html"><i class='bx bxs-message-dots' ></i></a></li>
+                  
+                 
+                    <li><a href="./adminprogress.html"><i class='bx bxs-chart'></i></a></li>
+                    <li><a href="./adminmonitoring.html"><img src="images/operating-system.png" alt=""></a></li>
+                    <li><a href=""><li><a href="./admincommunities.html"><i class='bx bxs-group'></i></a></li>
+                </a></li>
+                   
+                </ul>
 
-                <li><a href="./admin.html"><i class='bx bxs-user-account'></i></a></li>
-                <li><a href="./adminrequests.html"><i class='bx bxs-file'></i></a></li>
-                <li><a href="./adminmassege.html"><i class='bx bxs-message-dots' ></i></a></li>
-              
-             
-                <li><a href="./adminprogress.html"><i class='bx bxs-chart'></i></a></li>
-                <li><a href="./adminmonitoring.html"><img src="images/operating-system.png" alt=""></a></li>
-                <li><a href=""><li><a href="./admincommunities.html"><i class='bx bxs-group'></i></a></li>
-            </a></li>
-               
-            </ul>
+                <button id="logout-btn">Exit</button>
 
-            <button id="logout-btn">Exit</button>
+            </div> 
 
-        </div> 
-
-    </nav>
+        </nav>
 
     <section id="admin-section">
         <form action="" id="user-form">
@@ -107,5 +108,6 @@
 </section>
 
 <script src="js/adminadduser.js"></script>
+<script src="js/adminform.js"></script>
 </body>
 </html>

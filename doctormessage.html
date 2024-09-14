@@ -15,48 +15,62 @@
 <body>
     <header>
         <div class="headercontents">
-           <div class="logo"><h3>HEALTHYCO.</h3></div>
+           <div class="logo">            
+             <img src="./images/virtualcarelogo-removebg-preview.png" alt="">
+           </div>
            <div class="headeraccess">
             <div class="search">
                 <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
+                <button type="submit">Search</button>
             </div>
+            <div class="aibutton"><button onclick="window.location.href='chat.html'">Ask Bloom</button></div>
             <div class="icons">
+
+                
+                
             <div class="Profile">
-                <a href="">notifications</a>
+                <a href=""><i class='bx bx-bell'></i></a>
             </div>
             <div class="Profile">
-                <a href="">profile</a>
+                <a href=""><i class='bx bx-user-circle'></i></a>
             </div>
-        </div>
+            </div>
            </div>
         </div>
     </header>
+    
     <section class="mainbody">
         <nav>
             <div class="navbar">
-              <div class="navlogo"><h3><a href="/homepatient.html">Messages</a></h3>
-          </div>
-
-            <div class="searchmessages">
-                <input type="search" placeholder="Search People" name="searchbar" id="searchitem">
-            </div>
+              <div class="navlogo">Virtualcare</div>
                 <ul class="nav">
-                    <li><a href="#">{doctorname}</a></li>
-                    <li><a href="#">{username}</a></li>
+                    <li><a href="./homedoctor.html">Home</a></li>
+                    <li><a href="./doctormessage.html">Messages</a></li>
+                    <li><a href="./Patientslist.html">My Patients</a></li>
                     <li class="dropdown">
-                        <p>Support</p>
+                        <p>Progress</p>
                         <ul class="submenu">
-                            <li><a href="">Send a ticket</a></li>
-                            <li><a href="">FQA</a></li>
-                            <li><a href="">Learn More</a></li>
+                            <li><a href="./doctor'sprogress.html">All Progress</a></li>
+                            <li><a href="./doctorindividualprogress.html">Patient Progress</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <p>Communities</p>
+                        <p>Schedule</p>
                         <ul class="submenu">
-                            <li><a href="">Community</a></li>
+                            <li><a href="./doctorschedules.html">All Schedules</a></li>
+                            <li><a href="./doctorcreateschedule.html">Create Schedule</a></li>
                         </ul>
                     </li>
+                    <li class="dropdown">
+                        <p>Files</p>
+                        <ul class="submenu">
+                            <li><a href="./docotrfiles.html">Medical Files</a></li>
+                            <li><a href="./uploadfiles.html">Upload File</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="./patienthealthupdates.html">Health Updates</a></li> -->
+
+                   
                 </ul>
             </div> 
         </nav>
@@ -67,19 +81,19 @@
 
         <section class="messages">
             <div class="message-container">
-                <div class="message outgoing">
+                <!-- <div class="message outgoing">
                     <h3>{username}</h3>
                     <p>{message}</p>
                     <span class="timestamp">10:28 AM</span>
-                </div>
-                <div class="message incoming">
+                </div> -->
+                <!-- <div class="message incoming">
                     <img src="" alt="profilepicture" class="profile-picture">
                     <div class="message-content">
                         <h3>{senderusername}</h3>
                         <p>{message}</p>
                         <span class="timestamp">03:54 PM</span>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="sendmessage">
                 <textarea id="message" placeholder="Message"></textarea>

@@ -1,5 +1,5 @@
 header {
-    height: 70px;
+    height: 100px;
     width: 100%;
     background-color: white;
     position: fixed;
@@ -11,16 +11,16 @@ header {
 .headercontents{
     display: flex;
     gap: 10%;
-    padding-top: 20px;
+    padding-top: 40px;
 }
-.logo{
+.applogo{
     padding-left: 30px;
     cursor: pointer;
 }
-.logo img{
+.applogo img{
     margin-top: -35%;
     margin-left: -10%;
-    width: 220px;
+    width: 230px;
     height: 180px;
 }
 .search {

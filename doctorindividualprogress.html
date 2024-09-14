@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/doctorindividualprogress.css">
-    <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -13,184 +12,169 @@
     <title>Individual Progress</title>
 </head>
 <body>
-
-    <header>
-        <div class="headercontents">
-           <div class="logo"><h3>HEALTHYCO.</h3></div>
-           <div class="headeraccess">
-            <div class="search">
-                <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
-                <button type="submit">Search</button>
-            </div>
-            <div class="icons">
-            <div class="Profile">
-                <a href=""><i class='bx bx-bell'></i></a>
-            </div>
-            <div class="Profile">
-                <a href=""><i class='bx bx-user-circle'></i></a>
-            </div>
-            </div>
-           </div>
+]
+<header>
+    <div class="headercontents">
+       <div class="logo">            
+         <img src="./images/virtualcarelogo-removebg-preview.png" alt="">
+       </div>
+       <div class="headeraccess">
+        <div class="search">
+            <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
+            <button type="submit">Search</button>
         </div>
-    </header>
-    
-    <section class="mainbody">
-        <nav>
-            <div class="navbar">
-              <div class="navlogo"><h3><a href="">HEALTHYCO.</a></h3></div>
-                <ul class="nav">
-                    <li><a href="./homepatient.html">Home</a></li>
-                    <li><a href="./messagepatient.html">Messages</a></li>
-                    <li class="dropdown">
-                        <p>Progress</p>
-                        <ul class="submenu">
-                            <li><a href="./myprogress.html">My Progress</a></li>
-                            <li><a href="./logprogress.html">Log Progress</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <p>Schedule</p>
-                        <ul class="submenu">
-                            <li><a href="./patientschedules.html">All Schedules</a></li>
-                            <li><a href="./patientcreateschedule.html">Create Schedule</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./patientfiles.html">Files</a></li>
-                    <li><a href="./patienthealthupdates.html">Health Updates</a></li>
-                    <li class="dropdown">
-                        <p>Support</p>
-                        <ul class="submenu">
-                            <li><a href="./patientticketsupport.html">Send a ticket</a></li>
-                            <li><a href="./patientfqasupport.html">FQA</a></li>
-                            <li><a href="./patientlearnmore.html">Learn More</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <p>Communities</p>
-                        <ul class="submenu">
-                            <li><a href="">Community</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div> 
-        </nav>
-
-        <section class="individualprogressall">
-
-            <div class="doctorresponse">
-
-                <h3>Dr.{doctorname} Feedback</h3>
-
-                <p>{doctorfeedbackcontent}</p>
-
-            </div>
-
-    <section class="individualprogress">
-
-        <div class="allLatestprogress">
-
-            <h3>Check Progress</h3>
+        <div class="aibutton"><button onclick="window.location.href='chat.html'">Ask Bloom</button></div>
+        <div class="icons">
             
-            <div class="latestprogress">
-                <div class="checkprogress">
-                    <!-- <div class="progressstatus"></div> -->
-    
-                <div class="latestprogresstitle">
-                    <h4>Progress form on {illnessname}</h4>
-                    <button class="sendfeedback">Send Feedback</button>
-                </div>
+        <div class="Profile">
+            <a href=""><i class='bx bx-bell'></i></a>
+        </div>
+        <div class="Profile">
+            <a href=""><i class='bx bx-user-circle'></i></a>
+        </div>
+        </div>
+       </div>
     </div>
-                 
+</header>
 
-    <br> <br>
-
-               <p>  Time Logged: {datetimelocale}
-
-                </p>
-
-                <br>
-
-               <p>   Corresponding Doctor: {doctorname}   </p>
-
-                <br> 
-
-                <p>  Progress Status: {status}
-
-                </p>
-                
-                <br> <br>
-                <p>{logprogressformcontents} </p>
-              </div>
-    
-    
-          </div>
-
-        <div class="cards">
-            <div class="progress">
-          
-               <div class="chart">
-
-                <div class="gaugechart">
-
-                </div>
-
-
-               </div>
-
-               <div class="description">
-                    <h3>Progress Presentation</h3>
-                    <p>
-                        You've come a long away! Continue following your doctors instructions consistently 
-                        and avoid to engage in any unhealthy practices.</p>
-
-                        <br>
-
-                        <div class="buttons">
-                            <button><a href="">Understand healthy practices</a></button>
-
-                        </div>
+<section class="mainbody">
+    <nav>
+        <div class="navbar">
+          <div class="navlogo">Virtualcare</div>
+            <ul class="nav">
+                <li><a href="./homedoctor.html">Home</a></li>
+                <li><a href="./doctormessage.html">Messages</a></li>
+                <li><a href="./Patientslist.html">My Patients</a></li>
+                <li class="dropdown">
+                    <p>Progress</p>
+                    <ul class="submenu">
+                        <li><a href="./doctor'sprogress.html">All Progress</a></li>
+                        <li><a href="./doctorindividualprogress.html">Patient Progress</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <p>Schedule</p>
+                    <ul class="submenu">
+                        <li><a href="./doctorschedules.html">All Schedules</a></li>
+                        <li><a href="./doctorcreateschedule.html">Create Schedule</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <p>Files</p>
+                    <ul class="submenu">
+                        <li><a href="./docotrfiles.html">Medical Files</a></li>
+                        <li><a href="./uploadfiles.html">Upload File</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a href="./patienthealthupdates.html">Health Updates</a></li> -->
 
                
-               </div>
-
-            </div>
-
-            <div class="progress">
-          
-                <div class="chart">
-
-                    <div class="doghnutchart">
-
-                    </div>
- 
-                </div>
- 
-                <div class="description">
-                     <h3>Progress Presentation</h3>
-                     <p>
-                         You've come a long away! Continue following your doctors instructions consistently 
-                         and avoid to engage in any unhealthy practices.</p>
- 
-                         <br>
- 
-                         <div class="buttons">
-                             <button><a href="">Understand healthy practices</a></button>
-  
-                         </div>
- 
+            </ul>
+        </div> 
+    </nav>
                 
-                </div>
- 
-             </div>
+
+
+    <section class="individualprogressall">
+
+        <div class="doctorresponse">
+
+            <h3>Dr.{doctorname} Feedback</h3>
+
+            <p>{doctorfeedbackcontent}</p>
 
         </div>
 
+<section class="individualprogress">
+
+    <div class="allLatestprogress">
+
+        <h3>Check Progress</h3>
+        
+        <div class="latestprogress">
+            <div class="checkprogress">
+                <!-- <div class="progressstatus"></div> -->
+
+            <div class="latestprogresstitle">
+                <h4>Your Progress form on {illnessname}</h4></div>
+</div>
+             
+
+<br> <br>
+
+           <p>  Time Logged: {datetimelocale}
+
+            </p>
+
+            <br>
+
+           <p>   Corresponding Doctor: {doctorname}   </p>
+
+            <br> 
+
+            <p>  Progress Status: {status}
+
+            </p>
+            
+            <br> <br>
+            <p>{logprogressformcontents} </p>
+          </div>
 
 
-    </section>
+      </div>
+
+    <div class="cards">
+
+        <div class="progress">
+      
+            <div class="chart">
+
+                <div class="doghnutchart">
+
+                </div>
+
+            </div>
+
+            <div class="description">
+                 <h3> Patient's Progress!</h3>
+                 <p>
+                     You've come a long away! Continue following your doctors instructions consistently 
+                     and avoid to engage in any unhealthy practices.</p>
+
+                     <br>
+
+                     <div class="buttons">
+                         <button><a href="">Give feedback</a></button>
+
+                     </div>
+
+            
+            </div>
+
+         </div>
+
+    </div>
+
+
+
+</section>
+
+
+
+</section>
+</section>
+
+<br> <br> <br> 
+
+<footer>
+    <p>&copy; 2024 HealthyCo. App. All rights reserved.</p>
+</footer>
+
+<script src="js/nav.js"></script> 
+<script src="js/individualprogress.js"></script>
 
     
-    <div class="sendmessage">
+    <!-- <div class="sendmessage">
         <textarea id="message" placeholder="Feedback"></textarea>
         <div class="sendmessageactions">
             <label for="file-input">
@@ -206,18 +190,7 @@
             <span class="icon emoji-icon">😊</span>
             <button type="submit">Send</button>
         </div>
-    </div>
+    </div> -->
 
-    </section>
-</section>
-
-    <br> <br> <br> 
-
-    <footer>
-        <p>&copy; 2024 HealthyCo. App. All rights reserved.</p>
-    </footer>
-
-    <script src="js/nav.js"></script> 
-    <script src="js/messagepatient.js"></script>
 </body>
 </html>

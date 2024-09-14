@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/myprogress.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>My Progress</title>
+</head>
+<body>
+   
+    <header>
+        <div class="headercontents">
+           <div class="logo">            
+             <img src="./images/virtualcarelogo-removebg-preview.png" alt="">
+           </div>
+           <div class="headeraccess">
+            <div class="search">
+                <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
+                <button type="submit">Search</button>
+            </div>
+            <div class="aibutton"><button onclick="window.location.href='chat.html'">Ask Bloom</button></div>
+            <div class="icons">
+                
+            <div class="Profile">
+                <a href=""><i class='bx bx-bell'></i></a>
+            </div>
+            <div class="Profile">
+                <a href=""><i class='bx bx-user-circle'></i></a>
+            </div>
+            </div>
+           </div>
+        </div>
+    </header>
+    
+    <section class="mainbody">
+        <nav>
+            <div class="navbar">
+              <div class="navlogo">Virtualcare</div>
+                <ul class="nav">
+                    <li><a href="./homedoctor.html">Home</a></li>
+                    <li><a href="./doctormessage.html">Messages</a></li>
+                    <li><a href="./Patientslist.html">My Patients</a></li>
+                    <li class="dropdown">
+                        <p>Progress</p>
+                        <ul class="submenu">
+                            <li><a href="./doctor'sprogress.html">All Progress</a></li>
+                            <li><a href="./doctorindividualprogress.html">Patient Progress</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <p>Schedule</p>
+                        <ul class="submenu">
+                            <li><a href="./doctorschedules.html">All Schedules</a></li>
+                            <li><a href="./doctorcreateschedule.html">Create Schedule</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <p>Files</p>
+                        <ul class="submenu">
+                            <li><a href="./docotrfiles.html">Medical Files</a></li>
+                            <li><a href="./uploadfiles.html">Upload File</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="./patienthealthupdates.html">Health Updates</a></li> -->
+
+                   
+                </ul>
+            </div> 
+        </nav>
+
+    <section class="myprogress">
+
+        <div class="myprogresssearch">
+            <input type="search" placeholder="Search My Progress" name="searchbar" id="searchitem">
+            <button type="submit">Search</button>
+        </div>
+
+      <div class="allLatestprogress">
+
+        <h3> My Progress</h3>
+        
+        <!-- <div class="latestprogress">
+            <div class="checkprogress">
+                <div class="progressstatus"></div>
+
+            <div class="latestprogresstitle"><h4>Progress on {title}. Corresponding Doctor: {doctorname}</h4></div>
+</div>
+
+           
+            <p>You're right on track! {Username}, continue on this trajectory and you'll get better in no time! </p>
+          </div> -->
+
+          <!-- <div class="latestprogress" id="latestprogressid">
+
+            <div class="checkprogress">
+                <div class="progressstatus"></div>
+
+            <div class="latestprogresstitle"><h4>Progress on {illnessname}. Corresponding Doctor: {doctorname}</h4></div>
+</div>
+
+           
+            <p>You're right on track! {Username}, continue on this trajectory and you'll get better in no time! </p>
+          </div> -->
+
+
+      </div>
+
+    </section>
+
+
+
+    </section>
+
+    <br> <br> <br> <br> <br>
+
+    <footer>
+        <p>&copy; 2024 HealthyCo. App. All rights reserved.</p>
+    </footer>
+
+    <script src="js/nav.js"></script> 
+    <script src="js/myprogress.js"></script>
+</body>
+</html>

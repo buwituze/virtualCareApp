@@ -12,16 +12,20 @@
     <title>Individual Progress</title>
 </head>
 <body>
-
+    
     <header>
         <div class="headercontents">
-           <div class="logo"><h3>HEALTHYCO.</h3></div>
+           <div class="logo">            
+             <img src="./images/virtualcarelogo-removebg-preview.png" alt="">
+           </div>
            <div class="headeraccess">
             <div class="search">
                 <input type="search" placeholder="Search HealthyCo." name="searchbar" id="searchitem">
                 <button type="submit">Search</button>
             </div>
+            <div class="aibutton"><button onclick="window.location.href='chat.html'">Ask Bloom</button></div>
             <div class="icons">
+                
             <div class="Profile">
                 <a href=""><i class='bx bx-bell'></i></a>
             </div>
@@ -36,23 +40,23 @@
     <section class="mainbody">
         <nav>
             <div class="navbar">
-              <div class="navlogo"><h3><a href="">HEALTHYCO.</a></h3></div>
+              <div class="navlogo">Virtualcare</div>
                 <ul class="nav">
-                    <li><a href="./homepatient.html">Home</a></li>
-                    <li><a href="./messagepatient.html">Messages</a></li>
+                    <li><a href="./homedoctor.html">Home</a></li>
+                    <li><a href="./doctormessage.html">Messages</a></li>
                     <li><a href="./Patientslist.html">My Patients</a></li>
                     <li class="dropdown">
                         <p>Progress</p>
                         <ul class="submenu">
-                            <li><a href="./myprogress.html">My Progress</a></li>
-                            <li><a href="./logprogress.html">Log Progress</a></li>
+                            <li><a href="./doctor'sprogress.html">All Progress</a></li>
+                            <li><a href="./doctorindividualprogress.html">Patient Progress</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <p>Schedule</p>
                         <ul class="submenu">
-                            <li><a href="./patientschedules.html">All Schedules</a></li>
-                            <li><a href="./patientcreateschedule.html">Create Schedule</a></li>
+                            <li><a href="./doctorschedules.html">All Schedules</a></li>
+                            <li><a href="./doctorcreateschedule.html">Create Schedule</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -62,7 +66,7 @@
                             <li><a href="./uploadfiles.html">Upload File</a></li>
                         </ul>
                     </li>
-                    <li><a href="./patienthealthupdates.html">Health Updates</a></li>
+                    <!-- <li><a href="./patienthealthupdates.html">Health Updates</a></li> -->
 
                    
                 </ul>
@@ -73,6 +77,11 @@
 
             <div class="clients">
                 <h2>My Patients</h2>
+                <div class="adduserbtn">
+                    <a href="./doctoraddpatient.html"><button id="addbtn">Add User</button></a>
+                    
+                        </div></div>
+           
                 
                 <div class="clientstable">
                     <table>
@@ -103,5 +112,6 @@
 
     <script src="js/nav.js"></script> 
     <script src="js/messagepatient.js"></script>
+    <script src="js/patientlist.js"></script>
 </body>
 </html>
